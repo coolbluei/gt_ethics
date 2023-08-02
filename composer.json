@@ -21,28 +21,28 @@
       "url": "https://packages.drupal.org/8"
     },
     {
-      "type": "vcs",
-      "url": "https://github.gatech.edu/ICWebTeam/gt_profile.git"
+      "type": "path",
+      "url": "gt/gt_profile"
     },
     {
-      "type": "vcs",
-      "url": "https://github.gatech.edu/ICWebTeam/gt_theme.git"
+      "type": "path",
+      "url": "gt/gt_theme"
     },
     {
-      "type": "vcs",
-      "url": "https://github.gatech.edu/ICWebTeam/gt_tools.git"
+      "type": "path",
+      "url": "gt/gt_tools"
     },
     {
-      "type": "vcs",
-      "url": "https://github.gatech.edu/ICWebTeam/hg_reader.git"
+      "type": "path",
+      "url": "gt/hg_reader"
     },
     {
-      "type": "vcs",
-      "url": "https://github.gatech.edu/ICWebTeam/gt_editor"
+      "type": "path",
+      "url": "gt/gt_editor"
     }
   ],
   "require": {
-    "php": ">=7.3",
+    "php": ">=8.1",
     "composer/installers": "^1.9",
     "drupal/admin_toolbar": "^3.0",
     "drupal/back_to_top": "^3.0",
@@ -93,11 +93,12 @@
     "drupal/views_accordion": "^2.0",
     "drupal/xmlsitemap": "^1.2",
     "drush/drush": "^11.0",
-    "gt/gt_editor": " dev-4.x-dev",
-    "gt/gt_profile": "^4.0",
-    "gt/gt_theme": "^4.0",
-    "gt/gt_tools": "^4.0",
-    "gt/hg_reader": "^4.0",
+    "gt/gt_editor": "*",
+    "gt/gt_profile": "*",
+    "gt/gt_theme": "*",
+    "gt/gt_tools": "*",
+    "gt/hg_reader": "*",
+    "platformsh/config-reader": "^2.4",
     "webflo/drupal-finder": "^1.0.0",
     "webmozart/path-util": "^2.3"
   },
