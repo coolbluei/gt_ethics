@@ -5694,11 +5694,11 @@
         },
         {
             "name": "gt/gt_editor",
-            "version": "dev-057fc3a56a14183c4f4fddc073ebc22ed42814fd",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "gt/gt_editor",
-                "reference": "057fc3a56a14183c4f4fddc073ebc22ed42814fd"
+                "reference": "48e4277f9dbc02fec53214331ce042365c78d180"
             },
             "type": "drupal-module",
             "description": "Provides the gt_editor module, forthwith!",
@@ -5708,11 +5708,11 @@
         },
         {
             "name": "gt/gt_profile",
-            "version": "v4.0.0",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "gt/gt_profile",
-                "reference": "e0f185d4a071ee3f4c9449ef4388aee316358377"
+                "reference": "abe0b874055e55f5f9db277fdb1b02f9d8040385"
             },
             "type": "drupal-profile",
             "description": "GT install profile 3.x",
@@ -5722,11 +5722,11 @@
         },
         {
             "name": "gt/gt_theme",
-            "version": "v4.0.0",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "gt/gt_theme",
-                "reference": "814284038ee3e4f811cbaba0006d8b3eb7656105"
+                "reference": "2108e3ce516f5532a297014ec03d74dffbcd2d13"
             },
             "type": "drupal-theme",
             "description": "The GT 4.x theme",
@@ -5736,11 +5736,11 @@
         },
         {
             "name": "gt/gt_tools",
-            "version": "v4.0.0",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "gt/gt_tools",
-                "reference": "1035fa4bb77ce52b1f783e830710516fabf08c19"
+                "reference": "7d7463fdb13dfaf50bbd00ba1cb8209ca94e3240"
             },
             "type": "drupal-module",
             "description": "Provides the gt_tools module, duh.",
@@ -5750,11 +5750,11 @@
         },
         {
             "name": "gt/hg_reader",
-            "version": "v4.0.0",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "gt/hg_reader",
-                "reference": "95d7b90336710b4943b0f0d4257c39a25c10fc16"
+                "reference": "930a0fd559311f271c67b746e7c6ca59353322f3"
             },
             "require": {
                 "drupal/twig_field_value": "^2.0",
