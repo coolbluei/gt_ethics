@@ -1,0 +1,23 @@
+uuid: 49ae9e79-4f5b-4482-ab76-7644fa01d1a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - stable
+_core:
+  default_config_hash: GuFeOiI86USe54vUJLANipJ0ZmZDpg17J1iSKdt3pac
+id: stable_search
+theme: stable
+region: sidebar_first
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

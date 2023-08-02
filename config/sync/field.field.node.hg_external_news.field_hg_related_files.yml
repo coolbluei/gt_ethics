@@ -1,0 +1,34 @@
+uuid: c39294bc-8d70-480a-9037-f57bbe2b67e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hg_related_files
+    - node.type.hg_external_news
+  module:
+    - custom_add_another
+    - file
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+_core:
+  default_config_hash: VfeGaTTZD8cGZb5aJdHoIkTPs9mllBsnJtQ261rap-4
+id: node.hg_external_news.field_hg_related_files
+field_name: field_hg_related_files
+entity_type: node
+bundle: hg_external_news
+label: 'Related files'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'hg_attachments/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp svg'
+  max_filesize: '2 MB'
+  description_field: false
+field_type: file

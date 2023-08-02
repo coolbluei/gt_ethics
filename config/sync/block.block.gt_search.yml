@@ -1,0 +1,23 @@
+uuid: 17e3324c-8c5e-40bf-91ee-66fb0c8ffbac
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - gt
+_core:
+  default_config_hash: GuFeOiI86USe54vUJLANipJ0ZmZDpg17J1iSKdt3pac
+id: gt_search
+theme: gt
+region: search
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

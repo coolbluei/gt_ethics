@@ -1,0 +1,27 @@
+features:
+  node_user_picture: 1
+  comment_user_picture: 0
+  comment_user_verification: 0
+  favicon: 1
+logo:
+  use_default: 1
+favicon:
+  use_default: 1
+contact_title: ''
+contact_address: ''
+contact_address_2: ''
+contact_city: ''
+contact_state: ''
+contact_zip_code: ''
+contact_telephone: ''
+contact_map_url: ''
+cas_login: '1'
+title_one_url: ''
+title_two_url: ''
+hide_breadcrumb: 0
+super_footer: 0
+footer_01_size: '3'
+footer_02_size: '3'
+footer_03_size: '3'
+footer_04_size: '3'
+customize_css: ".fa {\r\n  display: inline-block;\r\n  font: normal normal normal 14px/1 FontAwesome;\r\n    font-size: 14px;\r\n  font-size: inherit;\r\n  text-rendering: auto;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n}"

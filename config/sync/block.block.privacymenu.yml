@@ -1,0 +1,29 @@
+uuid: c4b9f401-7435-4e64-8bee-c9d4594d8492
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.privacy-menu
+  module:
+    - system
+  theme:
+    - ethicscompliance
+id: privacymenu
+theme: ethicscompliance
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:privacy-menu'
+settings:
+  id: 'system_menu_block:privacy-menu'
+  label: 'Privacy Menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/privacy\r\n/privacy-resources"

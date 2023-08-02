@@ -1,0 +1,8 @@
+uuid: c8dcfe19-06f3-4c87-8fd3-8e8905924671
+langcode: en
+status: true
+dependencies: {  }
+id: privacy-menu
+label: 'Privacy Menu'
+description: ''
+locked: false

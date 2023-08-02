@@ -1,0 +1,22 @@
+uuid: 6bb706d6-eefa-4184-be89-c4b7b08aef83
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ethicscompliance
+_core:
+  default_config_hash: xitR9051RTmCyUsLmvqhUMzWbR401S9jdpm66GBQESs
+id: ethicscompliance_help
+theme: ethicscompliance
+region: help
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

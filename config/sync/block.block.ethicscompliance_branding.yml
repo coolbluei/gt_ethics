@@ -1,0 +1,25 @@
+uuid: ed40f69c-a792-487a-9da2-cd308e697910
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ethicscompliance
+_core:
+  default_config_hash: 2ABvi_us1oUwjBVkU4gSQWjn6L3gr4_cCF6Nr4Uf4mg
+id: ethicscompliance_branding
+theme: ethicscompliance
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

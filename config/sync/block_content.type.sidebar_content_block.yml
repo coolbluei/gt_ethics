@@ -1,0 +1,8 @@
+uuid: a324d830-1571-4ee1-a2c3-bb38dbf8bbd5
+langcode: en
+status: true
+dependencies: {  }
+id: sidebar_content_block
+label: 'Sidebar Content Block'
+revision: 0
+description: 'A simple block with a top bar denoting sidebar content.'

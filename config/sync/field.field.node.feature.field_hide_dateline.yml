@@ -1,0 +1,29 @@
+uuid: 24f1735b-2b71-429a-8956-c6a7b0c5aa13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hide_dateline
+    - node.type.feature
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: node.feature.field_hide_dateline
+field_name: field_hide_dateline
+entity_type: node
+bundle: feature
+label: 'Hide dateline'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

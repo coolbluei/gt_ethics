@@ -1,0 +1,30 @@
+uuid: 7131b5ab-7b2b-4b62-aa56-9107a3a08838
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:sidebar_content_block:665fd2f1-5c5e-4877-9c36-36be6834dc07'
+  module:
+    - block_content
+    - system
+  theme:
+    - ethicscompliance
+id: privacycontact
+theme: ethicscompliance
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:665fd2f1-5c5e-4877-9c36-36be6834dc07'
+settings:
+  id: 'block_content:665fd2f1-5c5e-4877-9c36-36be6834dc07'
+  label: 'Privacy Contact'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/9\r\n/privacy-resources"

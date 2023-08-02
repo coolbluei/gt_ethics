@@ -1,0 +1,20 @@
+uuid: 289d2b91-8158-4850-ac79-d9b5b8e95ff0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ethicscompliance
+_core:
+  default_config_hash: EhiENWehpB_uG-vtaBD2a0v1GpxBCEaO-UqVVCV9jfM
+id: ethicscompliance_page_title
+theme: ethicscompliance
+region: before_content
+weight: -14
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

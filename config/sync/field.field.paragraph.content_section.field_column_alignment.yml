@@ -1,0 +1,28 @@
+uuid: 7cc0b71f-2cce-42a8-895c-f5a9c59ad00f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_alignment
+    - paragraphs.paragraphs_type.content_section
+  module:
+    - custom_add_another
+    - options
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: paragraph.content_section.field_column_alignment
+field_name: field_column_alignment
+entity_type: paragraph
+bundle: content_section
+label: 'column alignment'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: justify-content-center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

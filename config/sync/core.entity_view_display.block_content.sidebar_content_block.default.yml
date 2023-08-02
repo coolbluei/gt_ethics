@@ -1,0 +1,22 @@
+uuid: 4c51bee1-99e4-414b-a624-393f2577ec36
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.sidebar_content_block
+    - field.field.block_content.sidebar_content_block.body
+  module:
+    - text
+id: block_content.sidebar_content_block.default
+targetEntityType: block_content
+bundle: sidebar_content_block
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

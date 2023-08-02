@@ -1,0 +1,111 @@
+uuid: 8cb464ce-20dd-48af-9c76-1a4366685eca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hg_external_news.body
+    - field.field.node.hg_external_news.field_hg_article_url
+    - field.field.node.hg_external_news.field_hg_dateline
+    - field.field.node.hg_external_news.field_hg_id
+    - field.field.node.hg_external_news.field_hg_importer
+    - field.field.node.hg_external_news.field_hg_publication
+    - field.field.node.hg_external_news.field_hg_related_files
+    - field.field.node.hg_external_news.field_hg_source_updated
+    - node.type.hg_external_news
+  module:
+    - datetime
+    - file
+    - link
+    - text
+    - user
+_core:
+  default_config_hash: uZR11fx7LJvdEG9L534S0XT_x3VdVXONFF_7EJtNDhk
+id: node.hg_external_news.default
+targetEntityType: node
+bundle: hg_external_news
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_hg_article_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_hg_dateline:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_hg_id:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_hg_importer:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_hg_publication:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_hg_related_files:
+    type: file_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_hg_source_updated:
+    type: timestamp
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: ''
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

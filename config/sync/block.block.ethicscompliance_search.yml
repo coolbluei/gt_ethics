@@ -1,0 +1,23 @@
+uuid: f03d2776-d8db-421a-bf33-d97b93b29cb2
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - ethicscompliance
+_core:
+  default_config_hash: GuFeOiI86USe54vUJLANipJ0ZmZDpg17J1iSKdt3pac
+id: ethicscompliance_search
+theme: ethicscompliance
+region: search
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

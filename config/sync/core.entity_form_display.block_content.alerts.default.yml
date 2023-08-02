@@ -1,0 +1,52 @@
+uuid: 1df0d667-06ef-4d19-ab67-72c0c5e28b09
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.alerts
+    - field.field.block_content.alerts.body
+    - field.field.block_content.alerts.field_alert_style
+    - field.field.block_content.alerts.field_link
+  module:
+    - link
+    - text
+_core:
+  default_config_hash: Ch1H3yRY5HFyqlMr6tHABf6ODLfgbJKBRKbqazP5hDk
+id: block_content.alerts.default
+targetEntityType: block_content
+bundle: alerts
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_alert_style:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 26
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

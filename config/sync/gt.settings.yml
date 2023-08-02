@@ -1,0 +1,36 @@
+features:
+  node_user_picture: 1
+  favicon: 1
+  comment_user_picture: 0
+  comment_user_verification: 0
+logo:
+  use_default: 1
+favicon:
+  use_default: 1
+contact_title: ''
+contact_address: ''
+contact_address_2: ''
+contact_city: ''
+contact_state: ''
+contact_zip_code: ''
+contact_telephone: ''
+contact_map_url: 'https://goo.gl/maps/N61WfSyUdQyiQZjeA'
+cas_login: '0'
+sticky_menu: '0'
+sticky_header: '0'
+hide_breadcrumb: 0
+footer_fixed: ''
+footer_first_size: '3'
+footer_second_size: '3'
+footer_third_size: '3'
+footer_four_size: '3'
+super_footer: 1
+customize_css: "\r\n.banner-with-overlay-wrapper {\r\n\tposition: relative;\r\n}\r\n\r\n/* banner image */\r\n.banner-background-image {\r\n\tposition: relative;\r\n\twidth: 100%;\r\n\ttop: 0;\r\n\tz-index: 1;\r\n}\r\n\r\n.banner-background-image img {\r\n\twidth: 100%;\r\n}\r\n\r\n.banner-background-image-mobile {\r\n\tposition: relative;\r\n  display: none;\r\n}\r\n\r\n.banner-background-image:after {\r\n\tbackground: url('../images/dotgrid-tile-warmgray0.svg');\r\n\tbackground-size: 4rem 4rem;\r\n  position: absolute;\r\n  display: inline-block;\r\n  content: \"\";\r\n  width: 100%;\r\n  height: 5rem;\r\n  bottom: -4rem;\r\n  left: 0;\t\r\n  right: 0;\r\n}\r\n\r\n/* first text overlay container */\r\n.banner-top-overlay-container {\r\n\tposition: absolute;\r\n\tleft: 0;\r\n\tright: 0;\r\n\ttop: 0;\r\n\theight: 100%;\r\n}\r\n\r\n.banner-main-overlay-col {\r\n  z-index: 2;\r\n\tbackground-color: var(--gt-navy1);\r\n\tcolor: #ffffff;\r\n}\r\n\r\n.banner-heading,\r\n.banner-heading h3 {\r\n\tfont-size: 3.5rem;\r\n\tcolor: #ffffff;\r\n}\r\n\r\n.banner-top-overlay-container .lead {\r\n\tfont-weight: 400;\r\n\tcolor: #ffffff;\r\n}\r\n\r\n/* second bottom text overlay container */\r\n.banner-bottom-overlay-container {\r\n\tposition: relative;\r\n}\r\n\r\n.banner-bottom-overlay-col {\r\n\tz-index: 2;\r\n\tbackground-color: #ffffff;\r\n\tbox-shadow: 0 0 50px rgba(0,0,0,.3);\r\n  -webkit-box-shadow: 0 0 50px rgba(0,0,0,.3);\r\n\tborder-radius: 5px;\t\r\n\toverflow: hidden;\r\n\tpadding: 15px 0;\r\n\ttransform: translateY(-4rem);\r\n}\r\n\r\n@media (max-width: 991.98px) {\r\n\t.banner-heading,\r\n\t.banner-heading h3 {\r\n\t\tfont-size: 2.5rem;\r\n\t}   \r\n\t.banner-top-overlay-container .lead {\r\n\t  font-size: 1.15rem;\r\n\t  line-height: 1.4;\r\n  } \r\n\t.banner-bottom-overlay-col {\r\n\t\ttransform: translateY(-3rem);\r\n\t}\r\n}\r\n\r\n@media (max-width: 767.98px) {\r\n\t.banner-top-overlay-container {\r\n\t\tposition: relative;\r\n\t}\r\n\t.banner-top-overlay-container {\r\n\t\tbackground-color: var(--gt-navy1);\r\n\t\tmax-width: 100% !important;\r\n\t}\r\n\t.banner-top-overlay-container:after {\r\n\t\tbackground: url('../images/dotgrid-tile-warmgray0.svg');\r\n\t\tbackground-size: 4rem 4rem;\r\n\t  position: absolute;\r\n\t  display: inline-block;\r\n\t  content: \"\";\r\n\t  width: 100%;\r\n\t  height: 5rem;\r\n\t  bottom: -4rem;\r\n\t  left: 0;\t\r\n\t  right: 0;\r\n\t}\r\n\t.banner-main-overlay-col {\r\n\t\tpadding: 2rem !important;\r\n\t}\r\n\t.banner-bottom-overlay-col {\r\n\t\ttransform: translateY(0rem);\r\n\t\tmargin-top: 1rem;\r\n\t}\r\n  .banner-background-image-mobile {\r\n\t  display: block !important;\r\n\t}\r\n  .banner-background-image {\r\n\t  display: none;\r\n\t}\r\n}\r\n"
+title_one_url: ''
+title_two_url: ''
+_core:
+  default_config_hash: pKY4vxwhcXUJ8hr1anzR4yNRye5Hf6C0FOwgsr91OMc
+footer_01_size: '3'
+footer_02_size: '3'
+footer_03_size: '3'
+footer_04_size: '3'

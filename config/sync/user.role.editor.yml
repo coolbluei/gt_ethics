@@ -1,0 +1,173 @@
+uuid: f4810dc6-0ce0-43ed-8119-e073df933f95
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_display.node.page.default
+    - filter.format.basic_html
+    - filter.format.full_html
+    - node.type.article
+    - node.type.feature
+    - node.type.hg_boilerplate
+    - node.type.hg_event
+    - node.type.hg_external_news
+    - node.type.hg_image
+    - node.type.hg_news
+    - node.type.hg_profile
+    - node.type.hg_video
+    - node.type.page
+  module:
+    - block
+    - block_content
+    - block_region_permissions
+    - comment
+    - contextual
+    - file
+    - filter
+    - layout_builder
+    - media
+    - node
+    - paragraphs
+    - quickedit
+    - system
+    - toolbar
+    - video_embed_field
+    - view_unpublished
+_core:
+  default_config_hash: 35ekF6FOnrkLPDv56FmfWYn6H5C2aQbPVD88_Q4ddQk
+id: editor
+label: Editor
+weight: -6
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access block library'
+  - 'access comments'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access in-place editing'
+  - 'access toolbar'
+  - 'administer block content'
+  - 'administer block types'
+  - 'administer blocks'
+  - 'administer comments'
+  - 'administer gt after_content'
+  - 'administer gt banner'
+  - 'administer gt before_content'
+  - 'administer gt before_footer'
+  - 'administer gt content'
+  - 'administer gt full_width_after_content'
+  - 'administer gt full_width_before_content'
+  - 'administer gt full_width_content'
+  - 'administer gt full_width_content_two'
+  - 'administer gt other'
+  - 'administer gt page_bottom'
+  - 'administer gt page_top'
+  - 'administer gt sidebar_first'
+  - 'administer gt sidebar_second'
+  - 'administer nodes'
+  - 'configure all page node layout overrides'
+  - 'configure editable page node layout overrides'
+  - 'create and edit custom blocks'
+  - 'create article content'
+  - 'create feature content'
+  - 'create hg_boilerplate content'
+  - 'create hg_event content'
+  - 'create hg_external_news content'
+  - 'create hg_image content'
+  - 'create hg_news content'
+  - 'create hg_profile content'
+  - 'create hg_video content'
+  - 'create page content'
+  - 'delete any article content'
+  - 'delete any hg_boilerplate content'
+  - 'delete any hg_event content'
+  - 'delete any hg_external_news content'
+  - 'delete any hg_image content'
+  - 'delete any hg_news content'
+  - 'delete any hg_profile content'
+  - 'delete any hg_video content'
+  - 'delete any page content'
+  - 'delete article revisions'
+  - 'delete hg_boilerplate revisions'
+  - 'delete hg_event revisions'
+  - 'delete hg_external_news revisions'
+  - 'delete hg_image revisions'
+  - 'delete hg_news revisions'
+  - 'delete hg_profile revisions'
+  - 'delete hg_video revisions'
+  - 'delete own article content'
+  - 'delete own feature content'
+  - 'delete own files'
+  - 'delete own hg_boilerplate content'
+  - 'delete own hg_event content'
+  - 'delete own hg_external_news content'
+  - 'delete own hg_image content'
+  - 'delete own hg_news content'
+  - 'delete own hg_profile content'
+  - 'delete own hg_video content'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'edit any article content'
+  - 'edit any feature content'
+  - 'edit any hg_boilerplate content'
+  - 'edit any hg_event content'
+  - 'edit any hg_external_news content'
+  - 'edit any hg_image content'
+  - 'edit any hg_news content'
+  - 'edit any hg_profile content'
+  - 'edit any hg_video content'
+  - 'edit any page content'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own feature content'
+  - 'edit own hg_boilerplate content'
+  - 'edit own hg_event content'
+  - 'edit own hg_external_news content'
+  - 'edit own hg_image content'
+  - 'edit own hg_news content'
+  - 'edit own hg_profile content'
+  - 'edit own hg_video content'
+  - 'edit own page content'
+  - 'never autoplay videos'
+  - 'post comments'
+  - 'revert all revisions'
+  - 'revert article revisions'
+  - 'revert feature revisions'
+  - 'revert hg_boilerplate revisions'
+  - 'revert hg_event revisions'
+  - 'revert hg_external_news revisions'
+  - 'revert hg_image revisions'
+  - 'revert hg_news revisions'
+  - 'revert hg_profile revisions'
+  - 'revert hg_video revisions'
+  - 'revert page revisions'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'view all revisions'
+  - 'view any unpublished article content'
+  - 'view any unpublished content'
+  - 'view any unpublished feature content'
+  - 'view any unpublished hg_boilerplate content'
+  - 'view any unpublished hg_event content'
+  - 'view any unpublished hg_external_news content'
+  - 'view any unpublished hg_image content'
+  - 'view any unpublished hg_news content'
+  - 'view any unpublished hg_profile content'
+  - 'view any unpublished hg_video content'
+  - 'view any unpublished page content'
+  - 'view article revisions'
+  - 'view feature revisions'
+  - 'view hg_boilerplate revisions'
+  - 'view hg_event revisions'
+  - 'view hg_external_news revisions'
+  - 'view hg_image revisions'
+  - 'view hg_news revisions'
+  - 'view hg_profile revisions'
+  - 'view hg_video revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view the administration theme'
+  - 'view unpublished paragraphs'

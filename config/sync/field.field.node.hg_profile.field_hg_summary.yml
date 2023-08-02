@@ -1,0 +1,28 @@
+uuid: f4a397c8-c757-48de-814e-680fecbbe64d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hg_summary
+    - node.type.hg_profile
+  module:
+    - custom_add_another
+    - text
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+_core:
+  default_config_hash: g86hJ1tw-1m4Jizl6SV1vvzd-LW_brkRJHWATX5JbfY
+id: node.hg_profile.field_hg_summary
+field_name: field_hg_summary
+entity_type: node
+bundle: hg_profile
+label: Summary
+description: 'Enter a short summary of this person.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

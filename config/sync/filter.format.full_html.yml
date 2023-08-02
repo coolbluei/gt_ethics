@@ -1,0 +1,58 @@
+uuid: c2e06088-e323-4e35-9be3-31477b5d522b
+langcode: en
+status: true
+dependencies:
+  module:
+    - editor
+    - video_embed_wysiwyg
+_core:
+  default_config_hash: XoNAp-7UkLIn8KJSD5EFr1SZGZSnWiSBZ6yhYRqnqX8
+name: 'Full HTML'
+format: full_html
+weight: 1
+filters:
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 8
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 9
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 11
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <h1> <pre> <button class="btn btn-primary"> <img src alt data-entity-type data-entity-uuid data-align data-caption class=""> <i class="fas far"> <p class="small lead person-title"> <div id class=" w-50 float-left float-right">'
+      filter_html_help: true
+      filter_html_nofollow: false
+  video_embed_wysiwyg:
+    id: video_embed_wysiwyg
+    provider: video_embed_wysiwyg
+    status: true
+    weight: 0
+    settings: {  }
+  filter_image_lazy_load:
+    id: filter_image_lazy_load
+    provider: filter
+    status: true
+    weight: 12
+    settings: {  }

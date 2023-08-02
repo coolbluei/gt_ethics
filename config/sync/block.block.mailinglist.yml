@@ -1,0 +1,30 @@
+uuid: 8eb805af-1bec-4d69-a9c4-7bd0af054def
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ed219d70-391d-4bb6-b810-2f882405804d'
+  module:
+    - block_content
+    - system
+  theme:
+    - ethicscompliance
+id: mailinglist
+theme: ethicscompliance
+region: after_content
+weight: 1
+provider: null
+plugin: 'block_content:ed219d70-391d-4bb6-b810-2f882405804d'
+settings:
+  id: 'block_content:ed219d70-391d-4bb6-b810-2f882405804d'
+  label: 'Mailing List'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

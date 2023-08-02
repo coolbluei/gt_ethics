@@ -1,0 +1,30 @@
+uuid: 71c84c3b-e9d2-4a67-a59a-e5628b265452
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:sidebar_content_block:a8f8f3cc-2f09-4213-9b78-e7d1efedbe7d'
+  module:
+    - block_content
+    - system
+  theme:
+    - ethicscompliance
+id: ethicsweekresources
+theme: ethicscompliance
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:a8f8f3cc-2f09-4213-9b78-e7d1efedbe7d'
+settings:
+  id: 'block_content:a8f8f3cc-2f09-4213-9b78-e7d1efedbe7d'
+  label: 'Ethics Week Resources'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/13

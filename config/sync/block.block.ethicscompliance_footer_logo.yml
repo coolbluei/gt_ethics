@@ -1,0 +1,20 @@
+uuid: 59bfd76b-88df-4dec-a39c-7efcffe1d9da
+langcode: en
+status: true
+dependencies:
+  module:
+    - gt_tools
+  theme:
+    - ethicscompliance
+id: ethicscompliance_footer_logo
+theme: ethicscompliance
+region: footer_08
+weight: 0
+provider: null
+plugin: gt_footer_logo_block
+settings:
+  id: gt_footer_logo_block
+  label: 'GT gold footer: logo (required)'
+  label_display: '0'
+  provider: gt_tools
+visibility: {  }

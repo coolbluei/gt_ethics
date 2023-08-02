@@ -1,0 +1,22 @@
+uuid: c792ecf1-d8ce-4452-a2f0-f8e87bd94a34
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ethicscompliance
+_core:
+  default_config_hash: oWtdwWiD9OCMNsv9JgRkz9GsOyQRsNTWnYjCuTcKP68
+id: ethicscompliance_breadcrumbs
+theme: ethicscompliance
+region: breadcrumbs
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

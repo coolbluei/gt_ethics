@@ -1,0 +1,22 @@
+uuid: c3bfb302-74a6-4116-aee9-27791acbc466
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ethicscompliance
+_core:
+  default_config_hash: fEXmvhXSHFjanAL1m4kgAmvFRH43L4LYPcrt5DvpoPE
+id: ethicscompliance_content
+theme: ethicscompliance
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

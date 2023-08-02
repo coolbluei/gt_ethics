@@ -1,0 +1,27 @@
+uuid: dc0e4b52-9305-41ef-be9a-af941c67842a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - ethicscompliance
+_core:
+  default_config_hash: yYuH5TfZu0GwzpXaf_j6bH5iTgk_nJzRqscDcBJZ3Bg
+id: ethicscompliance_main_menu
+theme: ethicscompliance
+region: navigation
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

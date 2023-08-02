@@ -1,0 +1,8 @@
+uuid: 26c8bf92-e867-4843-b279-b12e2bcd6f5c
+langcode: en
+status: true
+dependencies: {  }
+id: banner_with_overlay
+label: 'Banner with Overlay'
+revision: 0
+description: ''

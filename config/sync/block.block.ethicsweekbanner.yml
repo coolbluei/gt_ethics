@@ -1,0 +1,30 @@
+uuid: 22c624c0-f605-4568-b136-926cb58d9273
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:simple_content_block:1ad3377f-489b-41d3-b5b4-86e0ba307247'
+  module:
+    - block_content
+    - system
+  theme:
+    - ethicscompliance
+id: ethicsweekbanner
+theme: ethicscompliance
+region: before_content
+weight: -15
+provider: null
+plugin: 'block_content:1ad3377f-489b-41d3-b5b4-86e0ba307247'
+settings:
+  id: 'block_content:1ad3377f-489b-41d3-b5b4-86e0ba307247'
+  label: 'Ethics Week Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/13

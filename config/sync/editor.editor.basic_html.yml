@@ -1,0 +1,80 @@
+uuid: 5bcf8154-afac-4438-bd49-1034e38ed060
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - ckeditor
+    - editor_file
+third_party_settings:
+  editor_file:
+    status: true
+    scheme: public
+    directory: inline-files
+    extensions: txt
+    max_size: ''
+_core:
+  default_config_hash: PKgPCPFA2hH82LD1fqzNTmaizZdA1VyQFsrlSs-m6o8
+format: basic_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Superscript
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - Outdent
+            - Indent
+            - HorizontalRule
+            - Table
+        -
+          name: Linking
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+            - video_embed
+        -
+          name: 'Block Formatting'
+          items:
+            - Format
+        -
+          name: Tools
+          items:
+            - Source
+            - Styles
+  plugins:
+    stylescombo:
+      styles: "button.btn.btn-primary|Button\r\ni.fas|Solid Icon\r\ni.far|Regular Icon\r\np.small|Small Text\r\np.lead|Intro Text\r\np.person-title|Person's Title\r\nh3.heading-border|Heading with Border"
+    video_embed:
+      defaults:
+        children:
+          autoplay: false
+          responsive: true
+          width: '854'
+          height: '480'
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

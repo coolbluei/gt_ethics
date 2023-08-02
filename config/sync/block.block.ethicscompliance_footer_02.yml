@@ -1,0 +1,27 @@
+uuid: a23def2b-629b-4063-bf83-6839599c737f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.gt-footer-02
+  module:
+    - system
+  theme:
+    - ethicscompliance
+_core:
+  default_config_hash: xnRhDdXXRGj3WNfvL_R7HSE_ZPPfs0aiPrn2SZXQvHo
+id: ethicscompliance_footer_02
+theme: ethicscompliance
+region: footer_02
+weight: 0
+provider: null
+plugin: 'system_menu_block:gt-footer-02'
+settings:
+  id: 'system_menu_block:gt-footer-02'
+  label: 'GT super footer: column 2 (optional)'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

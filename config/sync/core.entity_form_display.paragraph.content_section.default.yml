@@ -1,0 +1,85 @@
+uuid: 13ee8beb-8672-4cb1-ab59-c8efc375fbe5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_section.field_background
+    - field.field.paragraph.content_section.field_column_alignment
+    - field.field.paragraph.content_section.field_columns
+    - field.field.paragraph.content_section.field_padding
+    - field.field.paragraph.content_section.field_width
+    - paragraphs.paragraphs_type.content_section
+  module:
+    - field_group
+    - inline_entity_form
+third_party_settings:
+  field_group:
+    group_content_row_options:
+      children:
+        - field_background
+        - field_padding
+        - field_width
+        - field_column_alignment
+      label: 'Content Row Options'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: ''
+        id: content-row-options
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+_core:
+  default_config_hash: j59nFe8e4rThrZMyaUEZsUmpk6lDuM92KqRyTdIr0oQ
+id: paragraph.content_section.default
+targetEntityType: paragraph
+bundle: content_section
+mode: default
+content:
+  field_background:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_column_alignment:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_columns:
+    type: inline_entity_form_simple
+    weight: 4
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_padding:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_width:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

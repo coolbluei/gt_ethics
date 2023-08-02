@@ -1,0 +1,14 @@
+uuid: 6393d33a-c4b5-4b3d-baeb-35457e00f79d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.reader
+  module:
+    - user
+id: user_remove_role_action.reader
+label: 'Remove the Reader role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: reader

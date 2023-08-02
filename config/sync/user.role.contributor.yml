@@ -1,0 +1,14 @@
+uuid: 17d3223b-1391-4c2a-9d09-8a4ccbff0031
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - system
+id: contributor
+label: Contributor
+weight: -7
+is_admin: null
+permissions:
+  - 'delete own files'
+  - 'view the administration theme'

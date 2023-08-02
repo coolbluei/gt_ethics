@@ -1,0 +1,36 @@
+uuid: 0f2a32ab-48a5-44ea-96a6-e9077f559197
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_column_alignment
+field_name: field_column_alignment
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: justify-content-center
+      label: Centered
+    -
+      value: justify-content-between
+      label: 'Space Between'
+    -
+      value: justify-content-around
+      label: 'Space Around'
+    -
+      value: justify-content-start
+      label: 'Left Aligned'
+    -
+      value: justify-content-end
+      label: 'Right Aligned'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

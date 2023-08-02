@@ -1,0 +1,115 @@
+uuid: f87e6a40-a7ac-448d-85b4-8560eda15e4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_with_overlay
+    - field.field.block_content.banner_with_overlay.body
+    - field.field.block_content.banner_with_overlay.field_banner_background_image
+    - field.field.block_content.banner_with_overlay.field_banner_bg_image_mobile
+    - field.field.block_content.banner_with_overlay.field_banner_bottom_overlay_text
+    - field.field.block_content.banner_with_overlay.field_banner_heading
+    - field.field.block_content.banner_with_overlay.field_intro_text
+    - image.style.thumbnail
+  module:
+    - field_group
+    - image
+    - text
+third_party_settings:
+  field_group:
+    group_main_banner_overlay:
+      children:
+        - field_banner_heading
+        - field_intro_text
+      label: 'Main Banner Overlay'
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+    group_banner_bottom_overlay:
+      children:
+        - field_banner_bottom_overlay_text
+      label: 'Banner Bottom Overlay'
+      region: content
+      parent_name: ''
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+id: block_content.banner_with_overlay.default
+targetEntityType: block_content
+bundle: banner_with_overlay
+mode: default
+content:
+  field_banner_background_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_banner_bg_image_mobile:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_banner_bottom_overlay_text:
+    type: text_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_banner_heading:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_intro_text:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true

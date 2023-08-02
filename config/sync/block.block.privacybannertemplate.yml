@@ -1,0 +1,30 @@
+uuid: c996d1ac-f1ef-4a67-8797-22d97c62c3d2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:simple_content_block:4b42d2c5-b787-4d2c-980e-773a6963c440'
+  module:
+    - block_content
+    - system
+  theme:
+    - ethicscompliance
+id: privacybannertemplate
+theme: ethicscompliance
+region: banner
+weight: -14
+provider: null
+plugin: 'block_content:4b42d2c5-b787-4d2c-980e-773a6963c440'
+settings:
+  id: 'block_content:4b42d2c5-b787-4d2c-980e-773a6963c440'
+  label: 'Privacy Banner Template Example'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/40\r\n/node/43\r\n/node/44\r\n/node/45\r\n/node/9"

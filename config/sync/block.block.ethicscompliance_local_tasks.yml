@@ -1,0 +1,22 @@
+uuid: a1251e3d-23fd-414a-82b3-d292c58e5ab6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ethicscompliance
+_core:
+  default_config_hash: 7p2WUoIhVZbSlvyUBDOnc2HKqRNQF6yJogWZP0m_ce8
+id: ethicscompliance_local_tasks
+theme: ethicscompliance
+region: help
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

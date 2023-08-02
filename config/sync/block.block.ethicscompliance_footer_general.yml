@@ -1,0 +1,27 @@
+uuid: 88c47c3b-8116-4bea-814b-2a57df5799dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.gt-footer-general
+  module:
+    - system
+  theme:
+    - ethicscompliance
+_core:
+  default_config_hash: wFI_9O2QMFk71AumUzmby3SJDSRSXYBaoc5gykMBa8s
+id: ethicscompliance_footer_general
+theme: ethicscompliance
+region: footer_06
+weight: 0
+provider: null
+plugin: 'system_menu_block:gt-footer-general'
+settings:
+  id: 'system_menu_block:gt-footer-general'
+  label: 'GT official links: general (required)'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

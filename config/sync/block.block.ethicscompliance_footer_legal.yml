@@ -1,0 +1,27 @@
+uuid: 24f6cca5-05c5-4014-a204-077690a7dd24
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.gt-footer-legal
+  module:
+    - system
+  theme:
+    - ethicscompliance
+_core:
+  default_config_hash: ThF3C8qkj0iVui86UxMyUXNjsoSsgznvjiK3QBOaxMI
+id: ethicscompliance_footer_legal
+theme: ethicscompliance
+region: footer_07
+weight: 0
+provider: null
+plugin: 'system_menu_block:gt-footer-legal'
+settings:
+  id: 'system_menu_block:gt-footer-legal'
+  label: 'GT official links: legal (required)'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

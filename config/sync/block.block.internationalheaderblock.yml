@@ -1,0 +1,30 @@
+uuid: de3b01e8-3a54-4df0-9e52-42a0ab8f7fdc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:simple_content_block:b279290a-730c-4854-b630-978c6bd45d72'
+  module:
+    - block_content
+    - system
+  theme:
+    - ethicscompliance
+id: internationalheaderblock
+theme: ethicscompliance
+region: banner
+weight: -16
+provider: null
+plugin: 'block_content:b279290a-730c-4854-b630-978c6bd45d72'
+settings:
+  id: 'block_content:b279290a-730c-4854-b630-978c6bd45d72'
+  label: 'International Header Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/11\r\n/node/20\r\n/node/21\r\n/node/22\r\n/node/23\r\n/node/24"

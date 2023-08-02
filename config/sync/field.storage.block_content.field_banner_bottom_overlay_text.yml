@@ -1,0 +1,19 @@
+uuid: ed922abb-6df3-49aa-94f0-0827a55ccc04
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_banner_bottom_overlay_text
+field_name: field_banner_bottom_overlay_text
+entity_type: block_content
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

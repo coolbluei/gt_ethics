@@ -1,0 +1,29 @@
+uuid: a0af456f-68a1-45c8-b5e2-0391be9094e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.international
+  module:
+    - system
+  theme:
+    - ethicscompliance
+id: internationalmenu
+theme: ethicscompliance
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:international'
+settings:
+  id: 'system_menu_block:international'
+  label: 'International Menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/exportandtrade\r\n/exportandtrade/contacts\r\n/exportandtrade/TCP\r\n/exportandtrade/forms\r\n/exportandtrade/resources\r\n/exportandtrade/faqs"

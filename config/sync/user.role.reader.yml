@@ -1,0 +1,12 @@
+uuid: 895f5109-20a8-46aa-b51d-15295a47c4ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: reader
+label: Reader
+weight: -8
+is_admin: null
+permissions:
+  - 'delete own files'

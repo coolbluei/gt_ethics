@@ -1,0 +1,8 @@
+uuid: f7b20bf1-3e4b-4754-8b6d-4c6b143b93c5
+langcode: en
+status: true
+dependencies: {  }
+id: simple_content_block
+label: 'Simple Content Block'
+revision: 0
+description: 'Content block with no particular styling applied and no special fields.'

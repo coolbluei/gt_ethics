@@ -1,0 +1,83 @@
+uuid: 001f7ffe-784f-447f-a700-261d457cf36f
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+    - editor_file
+third_party_settings:
+  editor_file:
+    status: true
+    scheme: public
+    directory: inline-files
+    extensions: txt
+    max_size: ''
+_core:
+  default_config_hash: rbJxftY-9oCQkSu9Jmp3UeXtqT7FRvWhJg_lCoKZYmg
+format: full_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Strike
+            - Superscript
+            - Subscript
+            - RemoveFormat
+            - HorizontalRule
+            - '-'
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+        -
+          name: Linking
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+            - Table
+            - video_embed
+        -
+          name: 'Block Formatting'
+          items:
+            - Format
+        -
+          name: Tools
+          items:
+            - ShowBlocks
+            - Source
+            - Styles
+  plugins:
+    stylescombo:
+      styles: "button.btn.btn-primary|Button\r\ni.fas|Solid Icon\r\ni.far|Regular Icon\r\np.small|Small Text\r\np.lead|Intro Text\r\np.person-title|Person's Title\r\ndiv.w-50.float-left|Float left 50%\r\ndiv.w-50.float-right|Float right 50%"
+    video_embed:
+      defaults:
+        children:
+          autoplay: false
+          responsive: true
+          width: '854'
+          height: '480'
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

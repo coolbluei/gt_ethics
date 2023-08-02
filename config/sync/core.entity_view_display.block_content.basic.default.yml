@@ -1,0 +1,38 @@
+uuid: b8efd101-d4e0-4700-bd37-dd606e05f89d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.field.block_content.basic.body
+    - field.field.block_content.basic.field_link
+  module:
+    - link
+    - text
+_core:
+  default_config_hash: IuxBIOMxHvxO1S6RPT3iqmieY-qc_2-z0o5mVKLC9_g
+id: block_content.basic.default
+targetEntityType: block_content
+bundle: basic
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

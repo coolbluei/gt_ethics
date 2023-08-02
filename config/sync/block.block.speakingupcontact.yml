@@ -1,0 +1,30 @@
+uuid: e31f55a5-e7ce-48f8-bcca-803d1f3d4c51
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:sidebar_content_block:c4eabf0c-73e6-4f84-b981-509c14a2fed2'
+  module:
+    - block_content
+    - system
+  theme:
+    - ethicscompliance
+id: speakingupcontact
+theme: ethicscompliance
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:c4eabf0c-73e6-4f84-b981-509c14a2fed2'
+settings:
+  id: 'block_content:c4eabf0c-73e6-4f84-b981-509c14a2fed2'
+  label: 'Speaking Up Contact'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/10\r\n/node/12"

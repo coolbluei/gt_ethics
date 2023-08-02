@@ -1,0 +1,30 @@
+uuid: c3f7d86e-9c82-435a-bcc1-d37e08354572
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_with_overlay:c521546b-4f5e-4d62-af7f-3818df69a7a3'
+  module:
+    - block_content
+    - system
+  theme:
+    - ethicscompliance
+id: ethicscompliance_frontpagebanner
+theme: ethicscompliance
+region: banner
+weight: -15
+provider: null
+plugin: 'block_content:c521546b-4f5e-4d62-af7f-3818df69a7a3'
+settings:
+  id: 'block_content:c521546b-4f5e-4d62-af7f-3818df69a7a3'
+  label: 'Front Page Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
