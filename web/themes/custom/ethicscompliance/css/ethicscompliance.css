@@ -1,0 +1,512 @@
+/********* GT Official Web Colors *********/
+:root {
+    /*** Primary Colors ***/
+    --gt-black: #262626;
+    --gt-white: #ffffff;
+    --gt-offwhite: #f1f1f1;
+
+    /* Tech Gold */
+    --tech-gold00: #857437; /* accessible small text */
+    --tech-gold0: #A4925A; /* accessible large text */
+    --tech-gold1: #B3A369; /* non-accessible base color */
+    --tech-gold2: #BFB37C; /* non-accessible */    
+
+    /* Navy */
+    --gt-navy1: #003057; /* accessible base color */
+    --gt-navy2: #00529c; /* accessible */
+    --gt-navy3: #0C71CD; /* accessible */
+    --gt-navy4: #4391EC; /* non-accessible */
+
+    --warm-gray00: #666C65; /* accessible */
+    --warm-gray0: #A0A49F; /* non-accessible */
+    --warm-gray1: #D6DBD4; /* non-accessible base color*/
+    --warm-gray2: #E5E7E4; /* non-accessible */
+    --warm-gray3: #f3f4f2; /* non-accessible */
+
+		--black1: #333333; /* accessible */
+		--black2: #3b3b3b; /* accessible */
+		--black3: #545454; /* accessible */
+		--black4: #767676; /* accessible */
+		
+		--silver0: #9DABB7; /* non-accessible */
+		--silver1: #B2C0CB; /* non-accessible */
+		--silver2: #D5DDE4; /* non-accessible */
+		--silver3: #E6EDF3; /* non-accessible */
+		--silver4: #F0F5FA; /* non-accessible */		
+
+    /* GT Gold Grad */
+    --gt-gold-grad: linear-gradient(to right, var(--tech-gold0) 0%, var(--tech-gold1) 100%);
+		-moz-linear-gradient(left, var(--tech-gold0) 0%, var(--tech-gold1) 100%);
+		-webkit-linear-gradient(left, var(--tech-gold0) 0%, var(--tech-gold1) 100%);
+
+    /* GT Gold Grad Rev */
+    --gt-gold-grad-rev: linear-gradient(to right, var(--tech-gold1) 0%, var(--tech-gold0) 100%);
+		-moz-linear-gradient(left, var(--tech-gold1) 0%, var(--tech-gold0) 100%);
+		-webkit-linear-gradient(left, var(--tech-gold1) 0%, var(--tech-gold0) 100%);
+		
+		--gt-gold-half-md-gold: linear-gradient(to right, var(--tech-gold0) 0%, var(--tech-gold0) 50%, var(--tech-gold1) 50%, var(--tech-gold1) 100%);
+	  					-moz-linear-gradient(left, var(--tech-gold0) 0%, var(--tech-gold0) 50%, var(--tech-gold1) 50%, var(--tech-gold1) 100%);
+							-webkit-linear-gradient(left, var(--tech-gold0) 0%, var(--tech-gold0) 50%, var(--tech-gold1) 50%, var(--tech-gold1) 100%); 
+							
+		--gt-gold-half-md-gold-rev: linear-gradient(to right, var(--tech-gold1) 0%, var(--tech-gold1) 50%, var(--tech-gold0) 50%, var(--tech-gold0) 100%);
+	  					-moz-linear-gradient(left, var(--tech-gold1) 0%, var(--tech-gold1) 50%, var(--tech-gold0) 50%, var(--tech-gold0) 100%);
+							-webkit-linear-gradient(left, var(--tech-gold1) 0%, var(--tech-gold1) 50%, var(--tech-gold0) 50%, var(--tech-gold0) 100%); 							
+}
+
+/* -- END ROOT -- */
+
+
+/************** THEME OVERRIDES ********************/
+
+.footer-bg-col {
+    height: 100%;
+    background: linear-gradient(to left, var(--gt-md-gold) 20%, var(--gt-gold) 100%);
+}
+
+/************** TYPOGRAPHY ********************/
+
+p.lead {
+	font-weight: 400;
+}
+
+.subheading {
+  position: relative;	
+}
+
+.subheading::before {
+  position: absolute;
+  left: -.25rem;
+  top: -3.25rem;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  width: 100%;
+  background: var(--silver3);
+  border-radius: 3px;
+}
+
+.person-title {
+	font-size: 90%;
+	line-height: 1.3;
+	padding-bottom: .5rem;
+	border-bottom: 1px solid var(--silver2);
+	margin-bottom: 2rem;
+}
+
+.gt-main-content h3 {
+	margin-top: 1.6rem;
+}
+
+#gt-page-title h1.js-quickedit-page-title.page-title {
+	padding: 0;
+}
+
+/********* KICKER *********/
+
+.kicker {
+	font-family: adelle, serif;
+	font-weight: 600;
+	font-size: 1.1rem;
+	color: var(--tech-gold0);
+}
+
+/************** FEATURES MODULE OVERRIDES ********************/
+
+.paragraph--type--content-section {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.field--name-field-content-section div[class^="bg-"] {
+  position: relative;	
+}
+
+.field--name-field-content-section div[class^="bg-"]:after {
+	background: url('/themes/custom/ethicscompliance/images/dotgrid-tile-warmgray1.svg');
+	background-size: 4rem 4rem;
+	width: 100%;
+	height: 3rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	bottom: -1.5rem;
+	content: "";
+	position: absolute;
+	display: inline-block;
+	z-index: 99;
+}
+
+.field--name-field-content-section div[class^="bg-"] div[class^="bg-"]:after {
+  display: none;
+}
+
+/************** STYLE UTILITIES ********************/
+
+.gold-bar {
+	position: relative;
+	padding-top: 1.5rem;
+}
+
+.gold-bar::before {
+  background-color: var(--tech-gold1);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 9px;
+  content: "";
+  border-radius: 5px;
+}
+
+/***************** ICONS *****************/
+
+.fa, .far, .fas, .fab {
+	font-family: "Font Awesome 5 Free";
+  margin-right: .125rem;
+  font-size: inherit;
+  text-align: center;
+  text-indent: 0;
+  font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	color: var(--black4);
+	width: 1.5rem;
+	display: inline-block;
+}
+
+.fa, .fas {
+  font-weight: 900;
+}
+
+.small-icon {
+	width: 1rem;
+	font-size: 50%;
+	vertical-align: middle;
+	line-height: inherit;
+}
+
+.med-icon {
+	width: 1.5rem;
+	font-size: 75%;
+	vertical-align: middle;
+	line-height: inherit;
+}
+
+/********* BACKGROUND COLORS *********/
+
+.bg-warmgray0 {
+	background-color: var(--warm-gray0);
+}
+
+.bg-warmgray1 {
+	background-color: var(--warm-gray1);
+}
+
+.bg-warmgray2 {
+	background-color: var(--warm-gray2);
+}
+
+.bg-warmgray3 {
+	background-color: var(--warm-gray3);
+}
+
+.bg-silver0 {
+	background-color: var(--silver0);
+}
+
+.bg-silver1 {
+	background-color: var(--silver1);
+}
+
+.bg-silver2 {
+	background-color: var(--silver2);
+}
+
+.bg-silver3 {
+	background-color: var(--silver3);
+}
+
+.bg-silver4 {
+	background-color: var(--silver4);
+}
+
+/********* BACKGROUND PATTERNS *********/
+
+.bg-dotgrid-warmgray0 {
+	background: url('/themes/custom/ethicscompliance/images/dotgrid-tile-warmgray0.svg');
+	background-size: 4rem 4rem;
+}
+
+.bg-dotgrid-warmgray1 {
+	background: url('/themes/custom/ethicscompliance/images/dotgrid-tile-warmgray1.svg');
+	background-size: 4rem 4rem;
+}
+
+.bg-dotgrid-warmgray2 {
+	background: url('/themes/custom/ethicscompliance/images/dotgrid-tile-warmgray2.svg');
+	background-size: 4rem 4rem;
+}
+
+.bg-dotgrid-silver0 {
+	background: url('./images/dotgrid-tile-silver0.svg');
+	background-size: 4rem 4rem;
+}
+
+.bg-dotgrid-silver1 {
+	background: url('/themes/custom/ethicscompliance/images/dotgrid-tile-silver1.svg');
+	background-size: 4rem 4rem;
+}
+
+.bg-dotgrid-silver2 {
+	background: url('/themes/custom/ethicscompliance/images/dotgrid-tile-silver2.svg');
+	background-size: 4rem 4rem;
+}
+
+.bg-dotgrid-white {
+	background: url('/themes/custom/ethicscompliance/images/dotgrid-tile-white.svg');
+	background-size: 4rem 4rem;
+}
+
+
+/************** BORDERS ********************/
+
+
+.border-bottom-gold {
+	border-bottom: 1px solid var(--tech-gold1);
+}
+
+.border-top-gold {
+	border-top: 1px solid var(--tech-gold1);
+}
+
+.heading-border {
+	border-top: 10px solid var(--warm-gray2);
+	padding-top: 8px;
+	margin: 1.5rem 0;
+}
+
+/************** TABLES ********************/
+
+
+table {
+	width: 100% !important;
+	max-width: 100% !important;
+	table-layout:fixed;
+	word-break: break-word;
+	font-family: var(--font-roboto);
+	margin-bottom: 2rem;
+	font-size: .7rem;
+	line-height: 1.3;
+}
+
+thead {
+	font-size: .88rem;
+	font-weight: 600;
+}
+
+
+/************** VIEWS - MERCURY EVENTS ********************/
+
+#block-ethicscompliance-views-block-upcoming-events-block-1 {
+
+}
+
+.view-content-wrap {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+	justify-content: center !important;
+}
+
+.main-container .view-content-wrap h4 a {
+	color: var(--gt-navy1);
+	font-size: 1.25rem;
+}
+
+.main-container .view-content-wrap h4 a:hover,
+.main-container .view-content-wrap h4 a:focus {
+	color: var(--gt-navy2);
+}
+
+.view-content-wrap .event-date,
+.view-content-wrap .views-field-field-hg-location {
+	font-size: .8rem;
+	color: var(--black3);
+	font-weight: 500;
+	line-height: 1.4;
+	margin: .25rem 0;
+}
+
+.view-content-wrap .event-date .field-content,
+.view-content-wrap .views-field-field-hg-location .field-content {
+  display: inline-block;
+}
+
+.view-content-wrap .event-date::before,
+.view-content-wrap .views-field-field-hg-location::before {
+	color: var(--black3);
+	font-family: 'FontAwesome';
+	margin: 0 .25rem 0 0;
+	display: inline-block;
+	width: 1rem;
+	text-align: center;
+}
+
+.view-content-wrap .event-date::before {
+	content: "\f017";
+}
+
+.view-content-wrap .views-field-field-hg-location::before {
+	content: "\f041";
+}
+
+
+/************** SIDEBAR NAV ********************/
+
+
+aside nav {
+	padding-bottom: 2rem;
+	margin-top: 2rem;
+	margin-left: 2rem;
+}
+
+aside nav::before {
+	background-color: var(--tech-gold1);
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 9px;
+	content: "";
+	border-radius: 5px;
+}
+
+aside nav h4 {
+	padding: 1.5rem .5rem .75rem .5rem;
+}
+
+aside nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+aside nav li {
+	list-style: none;
+	text-indent: 0;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid var(--warm-gray1);
+}
+
+.main-container aside nav li a,
+.main-container aside nav li a:link,
+.main-container aside nav li a:visited {
+	text-decoration: none;
+	font-size: 1.05rem;
+	line-height: 1.1;
+	width: 100%;
+	display: block;
+	background: transparent;
+	font-weight: 400;
+	color: var(--gt-black);
+	padding: .625rem .875rem;
+	border-left: 4px solid transparent;
+	transition: all .2s ease-in-out;
+}
+
+.main-container aside nav li a:hover,
+.main-container aside nav li a:focus,
+.main-container aside nav li a:active,
+.main-container aside nav li a:visited:hover,
+.main-container aside nav li a:visited:focus,
+.main-container aside nav li a:visited:active,
+.main-container aside nav li a.active,
+.main-container aside nav li a.active:visited,
+.main-container aside nav li a.is-active,
+.main-container aside nav li a.is-active:visited {
+  transition: all .2s ease-in-out;
+	border-left: 4px solid var(--gt-navy4);
+	background: rgba(212, 216, 210, .25);
+}
+
+
+.main-container aside nav li a:active,
+.main-container aside nav li a.active,
+.main-container aside nav li a.active:visited,
+.main-container aside nav li a.is-active,
+.main-container aside nav li a.is-active:visited {
+  transition: all .2s ease-in-out;
+	border-left: 4px solid var(--gt-navy2);
+	background: rgba(212, 216, 210, .25);
+}
+
+
+/* second level */
+aside nav li li {
+	margin-left: 4px;
+  margin-bottom: 0;
+  border: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 600;
+  text-indent: 0;
+  text-indent: -.5rem;
+}
+
+.main-container aside nav li li a,
+.main-container aside nav li li a:link,
+.main-container aside nav li li a:visited,
+.main-container aside nav li li a.active,
+.main-container aside nav li li a.active:visited,
+.main-container aside nav li li a.is-active,
+.main-container aside nav li li a.is-active:visited {
+	font-weight: 500;
+	color: var(---black3);
+	font-size: .95rem;
+	letter-spacing: .035rem;
+	font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	border: 0 !important;
+	padding: .5rem .45rem .5rem 1.75rem;
+	margin: .125rem 0;
+}
+
+.main-container aside nav li li a::before,
+.main-container aside nav li li a:link::before,
+.main-container aside nav li li a:visited::before,
+.main-container aside nav li li a::before,
+.main-container aside nav li li a:link::before,
+.main-container aside nav li li a:visited::before {
+	color: transparent;
+  display: inline-block;
+  content: '\25C6';
+  margin-right: .25rem;
+ transition: all .2s ease-in-out;
+}
+
+.main-container aside nav li li a.active::before,
+.main-container aside nav li li a.active:link::before,
+.main-container aside nav li li a.active:visited::before,
+.main-container aside nav li li a.is-active::before,
+.main-container aside nav li li a.is-active:link::before,
+.main-container aside nav li li a.is-active:visited::before,
+.main-container aside nav li li a:hover::before,
+.main-container aside nav li li a:focus::before,
+.main-container aside nav li li a:active::before,
+.main-container aside nav li li a:visited:hover::before,
+.main-container aside nav li li a:visited:focus::before,
+.main-container aside nav li li a:visited:active::before {
+  display: inline-block;
+  color: var(--gt-navy2);
+  content: '\25C6';
+  margin-right: .25rem;
+}

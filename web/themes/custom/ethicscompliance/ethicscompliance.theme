@@ -1,0 +1,83 @@
+<?php
+
+/**
+ * @file
+ *
+ * Place your custom PHP code in this file.
+ */
+
+function ethicscompliance_preprocess_page(&$variables) {
+}
+
+/**
+ * Implementation of hook_form_alter().
+ *
+ *
+ */
+function ethicscompliance_suggestions_form_alter(array &$suggestions, array $variables) {
+}
+
+/**
+ * Implementation of block_form_alter().
+ *
+ *
+ */
+function ethicscompliance_form_search_block_form_alter(&$form, &$form_state) {
+}
+
+/**
+ * Implementation of hook_local_tasks().
+ *
+ */
+function ethicscompliance_preprocess_menu_local_task(&$variables) {
+}
+
+function ethicscompliance_preprocess_region(&$variables) {
+}
+/**
+ * Implementation of hook_preprocess_html().
+ *
+ */
+/* Allow CSS/Footer Customization and add path alias to body class */
+function ethicscompliance_preprocess_html(&$variables) {
+}
+
+/**
+ * Implementation of hook_views_views_grid().
+ *
+ */
+function ethicscompliance_preprocess_views_view_grid(&$variables) {
+}
+
+function ethicscompliance_preprocess_block(&$variables) {
+}
+
+function ethicscompliance_preprocess_block__inline_block__modal_image(&$variables) {
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for form templates.
+ * @param array $suggestions
+ * @param array $variables
+ */
+function ethicscompliance_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for form templates.
+ *
+ * @param $definitions
+ * @param array $extra
+ */
+function ethicscompliance_plugin_filter_block__layout_builder_alter(&$definitions, array $extra) {
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for page templates.
+ *
+ */
+function ethicscompliance_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+	   $suggestions[] = 'page__' . $node->bundle();
+  }
+}

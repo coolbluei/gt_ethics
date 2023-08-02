@@ -1,0 +1,15 @@
+global-styling:
+  css:
+    theme:
+      css/ethicscompliance.css: { }
+  js:
+    js/ethicscompliance.js: {}
+
+# Banner with Overlay Block.
+banner-with-overlay:
+  version: "1.0.x"
+  css:
+    base:
+      templates/block/banner_with_overlay/css/banner-overlay.css: {}
+  dependencies:
+    - core/jquery

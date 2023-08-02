@@ -1,0 +1,64 @@
+
+{# Attach the library #}
+{{ attach_library('ethicscompliance/banner-with-overlay') }}
+
+{# Preprocess #}
+{% set body = (content.body) %}
+
+{% set background_image = (content.field_banner_background_image) %} 
+{% set banner_heading = (content.field_banner_heading) %} 
+{% set intro_text = (content.field_intro_text) %} 
+{% set bottom_overlay_text = (content.field_banner_bottom_overlay_text) %} 
+
+{% set background_image_mobile = (content.field_banner_bg_image_mobile) %} 
+
+
+{# Content #}
+<div{{ attributes.addClass(classes|join(' ')) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    
+    <div class="banner-with-overlay-wrapper">
+	  	<div class="banner-background-image">
+	  		{{ background_image }}
+	  	</div>
+	  
+	  	<div class="banner-background-image-mobile">
+	  		{{ background_image_mobile }}
+	  	</div>
+	  	  
+	  
+		  <div class="banner-top-overlay-container container">	  		  
+		  	<div class="row h-100 align-items-center">	
+			  	<div class="banner-main-overlay-col col-12 col-sm-12 col-md-5">	
+			  	  	
+				  	<div class="banner-heading">
+				  		<h3>{{ banner_heading }}</h3>
+				  	</div>		 
+				  		 		
+			  		{% if intro_text is not empty %}
+			  			<div class="lead">{{ intro_text }}</div>
+			  		{% endif %}
+				  		
+				  	</div>
+			  	</div>
+		  </div>		 		  	
+    </div>
+
+			{% if bottom_overlay_text is not empty %}		  
+		  <div class="banner-bottom-overlay-container container">
+			  	<div class="row justify-content-center">
+				  	<div class="banner-bottom-overlay-col col-10 col-sm-11 col-md-8">
+				  		{{ bottom_overlay_text }}
+				  	</div>	
+			  	</div>  	
+	    </div>
+	   {% endif %}	
+	   
+	       
+  {% endblock %}
+</div>

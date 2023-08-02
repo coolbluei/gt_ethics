@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Bartik's theme implementation for a page title.
+ *
+ * Available variables:
+ * - title_attributes: HTML attributes for the page title element.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title: The page title, for use in the actual content.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ */
+#}
+{% if not is_front %}
+
+<div class="container p-0">
+{%
+  set classes = [
+    'page-title',
+    title_class,
+    'row',
+  ]
+%}     
+  <div{{ title_attributes.addClass(classes) }}>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+	    <div id="gt-page-title" role="heading" aria-level="1">
+	        <h1>{{ title }}</h1>
+	    </div>
+    </div><!--end col-->            
+  </div><!--end row-->           
+</div><!--end container-->  
+{% endif %}

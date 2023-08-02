@@ -1,0 +1,125 @@
+
+.banner-with-overlay-wrapper {
+	position: relative;
+}
+
+/* banner image */
+.banner-background-image {
+	position: relative;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+}
+
+.banner-background-image img {
+	width: 100%;
+}
+
+.banner-background-image-mobile {
+	position: relative;
+  display: none;
+}
+
+.banner-background-image:after {
+	background: url('../images/dotgrid-tile-warmgray0.svg');
+	background-size: 4rem 4rem;
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 5rem;
+  bottom: -4rem;
+  left: 0;	
+  right: 0;
+}
+
+/* first text overlay container */
+.banner-top-overlay-container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 100%;
+}
+
+.banner-main-overlay-col {
+  z-index: 2;
+	background-color: var(--gt-navy1);
+	color: #ffffff;
+}
+
+.banner-heading,
+.banner-heading h3 {
+	font-size: 3.5rem;
+	color: #ffffff;
+}
+
+.banner-top-overlay-container .lead {
+	font-weight: 400;
+	color: #ffffff;
+}
+
+/* second bottom text overlay container */
+.banner-bottom-overlay-container {
+	position: relative;
+}
+
+.banner-bottom-overlay-col {
+	z-index: 2;
+	background-color: #ffffff;
+	box-shadow: 0 0 50px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,.3);
+	border-radius: 5px;	
+	overflow: hidden;
+	padding: 15px 0;
+	transform: translateY(-4rem);
+}
+
+@media (max-width: 991.98px) {
+	.banner-heading,
+	.banner-heading h3 {
+		font-size: 2.5rem;
+	}   
+	.banner-top-overlay-container .lead {
+	  font-size: 1.15rem;
+	  line-height: 1.4;
+  } 
+	.banner-bottom-overlay-col {
+		transform: translateY(-3rem);
+	}
+}
+
+@media (max-width: 767.98px) {
+	.banner-top-overlay-container {
+		position: relative;
+	}
+	.banner-top-overlay-container {
+		background-color: var(--gt-navy1);
+		max-width: 100% !important;
+	}
+	.banner-top-overlay-container:after {
+		background: url('../images/dotgrid-tile-warmgray0.svg');
+		background-size: 4rem 4rem;
+	  position: absolute;
+	  display: inline-block;
+	  content: "";
+	  width: 100%;
+	  height: 5rem;
+	  bottom: -4rem;
+	  left: 0;	
+	  right: 0;
+	}
+	.banner-main-overlay-col {
+		padding: 2rem !important;
+	}
+	.banner-bottom-overlay-col {
+		transform: translateY(0rem);
+		margin-top: 1rem;
+	}
+  .banner-background-image-mobile {
+	  display: block !important;
+	}
+  .banner-background-image {
+	  display: none;
+	}
+}
