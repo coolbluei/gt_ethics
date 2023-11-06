@@ -15,23 +15,26 @@ ul.custom-links {
 }
 
 .custom-links .flex-column .nav-item a {
-    font-size: .9rem;
-    font-weight: 400;
+    font-size: 1rem;  /* from .9rem */
+    font-weight: 700; /* from 400 */
 }
 
 .custom-links a.nav-link {
     border-radius: 3px;
-    font-size: .9rem;
-    font-weight: 400;
+    font-size: 1rem; /* from .9rem */
+    font-weight: 700; /* from 400 */
     margin: 0 .25rem .25rem 0;
     padding: .25rem 1rem;
     text-decoration: none;
 }
 
-.custom-links .flex-column .nav-item a,
+.custom-links .flex-column .nav-item a{
+    text-decoration: none !important;
+}
+
 .custom-links .flex-column .nav-item a:hover,
 .custom-links a.nav-link:hover {
-    text-decoration: none !important;
+    text-decoration: underline !important;
 }
 
 #custom-links .flex-column .nav-item a,
@@ -39,7 +42,6 @@ ul.custom-links {
 .custom-links a.nav-link:hover {
     text-decoration: none !important;
 }
-
 
 .nav {
     border-radius: 2rem;
@@ -80,6 +82,8 @@ ul.custom-links {
     border: 0;
     color: var(--gt-black);
     margin-bottom: 0;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .transparent a.nav-link:hover,
@@ -128,6 +132,10 @@ ul.custom-links {
     color: var(--gt-black);
 }
 
+.white a.nav-link:hover{
+    text-decoration: underline !important;
+}
+
 /* white horizontal */
 .white a.nav-link,
 .white a.nav-link:visited {
@@ -165,6 +173,10 @@ ul.custom-links {
     color: var(--gt-white);
 }
 
+.blue a.nav-link:hover{
+    text-decoration: underline !important;
+}
+
 /* black */
 .black a.nav-link,
 .black a.nav-link:visited {
@@ -178,6 +190,10 @@ ul.custom-links {
     background-color: var(--gt-dark-gray);
     border-color: var(--gt-dark-gray);
     color: var(--gt-white);
+}
+
+.black a.nav-link:hover{
+    text-decoration: underline !important;
 }
 
 /* gold */
@@ -195,6 +211,11 @@ ul.custom-links {
     color: var(--gt-black);
 }
 
+.gold a.nav-link:hover{
+    text-decoration: underline !important;
+}
+
+
 /* Warm Gray -- Also known as "Pi Mile" */
 .warm-gray a.nav-link,
 .warm-gray a.nav-link:visited {
@@ -208,4 +229,8 @@ ul.custom-links {
     background-color: var(--gt-warm-gray-medium);
     border-color: var(--gt-warm-gray-medium);
     color: var(--gt-black);
+}
+
+.warm-gray a.nav-link:hover{
+    text-decoration: underline !important;
 }

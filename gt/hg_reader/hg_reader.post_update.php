@@ -234,6 +234,7 @@ function hg_reader_post_update_fix_timezones(&$sandbox) {
     $now = new DrupalDateTime('now');
     $now->setTimezone(new \DateTimeZone(DateTimeItemInterface::STORAGE_TIMEZONE));
     $nids = \Drupal::entityQuery('node')
+      ->accessCheck(FALSE)
       ->condition('type','hg_event')
       ->condition('field_hg_event_time.value', $now->format(DateTimeItemInterface::DATETIME_STORAGE_FORMAT), '>=')
       ->execute();
@@ -312,6 +313,7 @@ function getHgFieldMapping() {
  */
 function getHgEntities() {
   return \Drupal::entityQuery('node')
+      ->accessCheck(FALSE)
       ->condition('type', ['hg_event', 'hg_news'], 'IN')
       ->execute();
 }

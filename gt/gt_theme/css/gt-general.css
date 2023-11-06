@@ -131,13 +131,18 @@ body.frontpage #gt-page-title h1 {
   font-weight: 600;
 }
 
+/*** Body fill page height ***/
+.gt-body-page{
+  min-height: 55vh;  
+}
+
+
 /* Links */
 a,
 a:link {
   color: inherit;
   font-style: inherit;
   font-weight: 700;
-  text-decoration: none;
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
@@ -145,8 +150,7 @@ a:link {
 a:hover,
 a:focus,
 a:active {
-  color: inherit;
-  text-decoration: underline;
+  color: var(--gt-drk-gold);
   outline: none !important;
 }
 
@@ -158,6 +162,8 @@ a.selected {
   color: var(--gt-drk-gold);
   text-decoration: underline;
 }
+
+a.gt-search { text-decoration: none; }
 
 @media (prefers-reduced-motion: reduce) {
   a {
@@ -197,6 +203,11 @@ textarea:hover,
 textarea:focus,
 textarea:active {
   outline: none;
+}
+
+/* overrides default with 100% */
+select.form-select {
+  width: fit-content;
 }
 
 img {
@@ -601,11 +612,6 @@ tbody tr:nth-of-type(2n+1) {
   font-weight: 400;
   font-size: 90%;
   margin-left: .25rem;
-}
-
-a[href$=".pdf"] {
-  /* PDF file */
-  color: var(--gt-black);
 }
 
 .download-reader {

@@ -18,16 +18,80 @@
     border-right: none;
 }
 
+.main-nav nav a.is-active {
+  font-weight: 400;
+}
+
+/* bolds active menu link */
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    font-weight: 500;
+}
+
 .main-nav nav ul li:last-child,
 .main-nav nav ul li ul li,
 .main-nav nav ul li ul li ul li {
     border-right: none;
 }
 
-.navbar-expand-md .navbar-nav .nav-link {
+.navbar-expand-lg .navbar-nav .nav-link {
     padding: .2rem .5rem;
 }
 
+.navbar-expand-lg .navbar-nav li li,
+.navbar-expand-lg .navbar-nav li li {
+  /*padding: .5rem;*/
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.navbar-expand-lg .navbar-nav li.menu-item--level-2:hover,
+.navbar-expand-lg .navbar-nav li.menu-item--level-3:hover {
+  background: rgba(212, 216, 210, .25);
+  transition: all .2s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-nav li.menu-item--level-2:hover a {
+  color: var(--gt-dark-gray);
+}
+.navbar-expand-lg .navbar-nav li.menu-item--level-3:hover a {
+  color: var(--gt-dark-gold);
+}
+
+
+
+.navbar-expand-lg .navbar-nav li:last-child,
+.navbar-expand-lg .navbar-nav li:last-child {
+  /*padding: .5rem;*/
+  border-bottom: 0 solid rgba(0, 0, 0, .3);
+}
+
+.navbar-expand-lg .navbar-nav ul li li {
+  border: none;
+}
+
+.navbar-expand-lg .navbar-nav ul li ul {
+  padding-left: 2rem;
+  width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav ul li,
+.navbar-expand-lg .navbar-nav ul li a,
+.navbar-expand-lg .navbar-nav ul li a {
+  color: var(--gt-drk-gold);
+  font-family: var(--font-roboto);
+  font-weight: 600;
+  /*line-height: 1.2;*/
+  font-size: .9rem;
+  transition: all .2s ease-in-out;
+  display: block;
+}
+
+.navbar-expand-lg .navbar-nav ul li li a {
+  color: var(--gt-dark-gray);
+  font-weight: 500;
+  font-size: .85rem;
+}
+
+/* Utility Nav */
 .main-nav button {
     background: inherit;
     border: none;
@@ -44,16 +108,6 @@
     font-size: .9rem;
 }
 
-.main-nav .dropdown-item.menu-item--level-2 a,
-.main-nav .dropdown-item.menu-item--level-2 a:link,
-.main-nav .dropdown-item.menu-item--level-2 a:visited {
-    font-weight: 400;
-    color: var(--gt-black);
-}
-
-.main-nav .dropdown-item.menu-item--level-2 a:hover {
-    color: var(--gt-black);
-}
 
 .dropdown-item.menu-item--level-3:hover {
     background-color: var(--gt-gray-200);
@@ -120,11 +174,19 @@
 
 .utility-navigation.navbar-nav .nav-link {
     font-size: .9rem;
-    font-weight: 400;
+    font-weight: 600;
     color: var(--gt-drk-gold);
     line-height: 1.1;
     text-decoration: none;
     cursor: pointer;
+}
+
+.utility-navigation.navbar-nav .nav-link:hover,
+.utility-navigation.navbar-nav .nav-link:focus {
+  border-bottom: none;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  color: var(--gt-md-grey);
 }
 
 .utility-navigation a::after {

@@ -68,6 +68,14 @@ gt_footer_legal.legal:
       class:
         - btn btn-primary btn-sm disabled
 
+gt_footer_legal.equalopportunity:
+  title: 'Equal Opportunity, Nondiscrimination, and Anti-Harassment Policy'
+  description: 'Equal Opportunity, Nondiscrimination, and Anti-Harassment Policy'
+  parent: system.admin_structure_menu
+  menu_name: gt-footer-legal
+  url: https://www.policylibrary.gatech.edu/employment/equal-opportunity-nondiscrimination-and-anti-harassment-policy
+  weight: 150
+
 gt_footer_legal.privacy:
   title: 'Legal & Privacy Information'
   description: 'Georgia Institute of Technology Legal & Privacy Information'
@@ -705,7 +713,7 @@ gt-footer-04.alumni-association:
   description: 'Georgia Tech Alumni Association'
   parent: system.admin_structure_menu
   menu_name: gt-footer-04
-  url: https://gtalumni.org/
+  url: https://www.gtalumni.org/
   weight: 1000
 
 gt-footer-04.alumni-services:
@@ -713,7 +721,7 @@ gt-footer-04.alumni-services:
   description: 'Georgia Tech Alumni Career Services'
   parent: system.admin_structure_menu
   menu_name: gt-footer-04
-  url: https://gtalumni.org/career
+  url: https:/www.gtalumni.org/career
   weight: 1100
 
 gt-footer-04.foundation:

@@ -151,6 +151,7 @@ class HgImporter extends ContentEntityBase implements HgImporterInterface {
   public static function get_all_importers() {
     // Two ways to skin a cat, apparently.
     return self::loadMultiple(\Drupal::entityQuery('hg_reader_importer')
+      ->accessCheck(FALSE)
       ->execute());
   }
 
@@ -413,7 +414,7 @@ class HgImporter extends ContentEntityBase implements HgImporterInterface {
    * @return String       An imported node rendered as a serialized PHP array.
    */
   function serialize_xml($xml, $type = 'Feed') {
-    $xslt = drupal_get_path('module', 'hg_reader') . '/xsl/hgSerialized' . $type . '.xsl';
+    $xslt = \Drupal::service('extension.path.resolver')->getPath('module', 'hg_reader') . '/xsl/hgSerialized' . $type . '.xsl';
 
     // load XML into DOMDocument
     $xmlDoc = new \DOMDocument();
@@ -457,7 +458,9 @@ class HgImporter extends ContentEntityBase implements HgImporterInterface {
    */
   function get_text_format() {
     $config = \Drupal::config('hg_reader.settings');
-    $formats = \Drupal::entityQuery('filter_format')->execute();
+    $formats = \Drupal::entityQuery('filter_format')
+      ->accessCheck(FALSE)
+      ->execute();
     // TODO: module should suggest creating a text format on installation
     $format = $config->get('hg_text_format');
     if (empty($format) || !in_array($format, $formats)) {
@@ -549,12 +552,12 @@ class HgImporter extends ContentEntityBase implements HgImporterInterface {
         $elements['field_hg_invited_audience'] = $this->process_terms($rawnode['event_audience'], 'hg_invited_audience') ?: array();
         $elements['field_hg_images']           = $this->process_images($rawnode['hg_media']) ?: array();
         $elements['field_hg_event_time']       = $this->process_eventdate($rawnode['start'], $rawnode['end'], null);
-        
+
         // Extras
         foreach ($rawnode['event_extras'] as $extra) {
           $elements['field_hg_extras'][] = $extra['extra'];
         }
-        
+
         // Groups
         foreach ($rawnode['groups'] as $group) {
           $elements['field_hg_groups'][] = $group['name'];
@@ -661,6 +664,7 @@ class HgImporter extends ContentEntityBase implements HgImporterInterface {
 
         foreach ($rawnode['recent_news'] as $hg_id) {
           $query = \Drupal::entityQuery('node')
+            ->accessCheck(TRUE)
             ->condition('field_hg_id', $hg_id);
             $referenced = $query->execute();
 
@@ -810,7 +814,7 @@ class HgImporter extends ContentEntityBase implements HgImporterInterface {
 
         // TODO: This is not in the serialized array but should be.
         // $node->set('field_hg_sidebar']          = $remote_node['sidebar']);
-        
+
         // Contact
         $node->field_hg_contact->set(0, [
           'value' => $remote_node['contact'],
@@ -828,7 +832,7 @@ class HgImporter extends ContentEntityBase implements HgImporterInterface {
         ]);
 
         // Location URL
-        $node->set('field_hg_location_url', [ 
+        $node->set('field_hg_location_url', [
           'uri' => strpos($remote_node['locationurl'], 'http') != 0 ? 'http://' . $remote_node['locationurl'] : $remote_node['locationurl'],
           'title' => $remote_node['locationurltitle'],
         ]);
@@ -977,6 +981,7 @@ class HgImporter extends ContentEntityBase implements HgImporterInterface {
         // Recent news field may require importation of additional nodes.
         foreach ($remote_node['recent_news'] as $hg_id) {
           $query = \Drupal::entityQuery('node')
+            ->accessCheck(TRUE)
             ->condition('field_hg_id', $hg_id);
             $referenced = $query->execute();
           // This item is in the system already
@@ -1082,7 +1087,7 @@ class HgImporter extends ContentEntityBase implements HgImporterInterface {
         } else if (!isset($image['image_path']) || empty($image['image_path'])) {
           continue;
         } else if (!$data = @file_get_contents($image['image_path'])) { continue; }
-        $file = file_save_data($data, 'public://' . 'hg_media/' . $image['image_name'], FileSystemInterface::EXISTS_REPLACE);
+        $file = \Drupal::service('file.repository')->writeData($data, 'public://' . 'hg_media/' . $image['image_name'], FileSystemInterface::EXISTS_REPLACE);
         $image_list[$file->id()] = [
           'target_id' => $file->id(),
           'alt' => substr(strip_tags($image['body']), 0, 512),
@@ -1157,11 +1162,11 @@ class HgImporter extends ContentEntityBase implements HgImporterInterface {
     $tids = array();
     foreach ($rawterms as $rawterm) {
       if (is_array($rawterm)) { $rawterm = $rawterm[$vid] ?: $rawterm['term'] ; }
-      $terms = taxonomy_term_load_multiple_by_name($rawterm, $vid);
+      $terms = \Drupal::entityTypeManager()->getStorage("taxonomy_vocabulary")->loadByProperties(["name" => $rawterm, "vid" => $vid]);
       if ($terms == NULL) {
         $created = $this->create_term($rawterm, $vid);
         if ($created) {
-          $new_terms = taxonomy_term_load_multiple_by_name($rawterm, $vid);
+          $new_terms = \Drupal::entityTypeManager()->getStorage("taxonomy_vocabulary")->loadByProperties(["name" => $rawterm, "vid" => $vid]);
           foreach ($new_terms as $key => $term) {
             $tids[] = $key;
           }
@@ -1215,6 +1220,7 @@ class HgImporter extends ContentEntityBase implements HgImporterInterface {
   function delete_nodes($iid) {
     $name = $this->get('name')->first()->getValue();
     $result = \Drupal::entityQuery('node')
+        ->accessCheck(TRUE)
         ->condition('field_hg_importer', $iid)
         ->execute();
 
@@ -1244,6 +1250,7 @@ class HgImporter extends ContentEntityBase implements HgImporterInterface {
    */
   function countAllImporterItems($iid) {
     $query = \Drupal::entityQuery('node')
+      ->accessCheck(FALSE)
       ->condition('field_hg_importer', $iid);
     $count = $query->count()->execute();
     return $count;

@@ -6,7 +6,7 @@
  * @author Office of Communications and Marketing <web@comm.gatech.edu>
  */
 
-define('READER_VERSION', '4.0.0');
+define('READER_VERSION', '4.0.2');
 define('HG_IMAGE_NOT_FOUND', 113741);
 
 use Drupal\hg_reader\Entity\HgImporter;

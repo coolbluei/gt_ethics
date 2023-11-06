@@ -9,7 +9,7 @@
     --tech-gold00: #857437; /* accessible small text */
     --tech-gold0: #A4925A; /* accessible large text */
     --tech-gold1: #B3A369; /* non-accessible base color */
-    --tech-gold2: #BFB37C; /* non-accessible */    
+    --tech-gold2: #BFB37C; /* non-accessible */
 
     /* Navy */
     --gt-navy1: #003057; /* accessible base color */
@@ -27,12 +27,12 @@
 		--black2: #3b3b3b; /* accessible */
 		--black3: #545454; /* accessible */
 		--black4: #767676; /* accessible */
-		
+
 		--silver0: #9DABB7; /* non-accessible */
 		--silver1: #B2C0CB; /* non-accessible */
 		--silver2: #D5DDE4; /* non-accessible */
 		--silver3: #E6EDF3; /* non-accessible */
-		--silver4: #F0F5FA; /* non-accessible */		
+		--silver4: #F0F5FA; /* non-accessible */
 
     /* GT Gold Grad */
     --gt-gold-grad: linear-gradient(to right, var(--tech-gold0) 0%, var(--tech-gold1) 100%);
@@ -43,14 +43,14 @@
     --gt-gold-grad-rev: linear-gradient(to right, var(--tech-gold1) 0%, var(--tech-gold0) 100%);
 		-moz-linear-gradient(left, var(--tech-gold1) 0%, var(--tech-gold0) 100%);
 		-webkit-linear-gradient(left, var(--tech-gold1) 0%, var(--tech-gold0) 100%);
-		
+
 		--gt-gold-half-md-gold: linear-gradient(to right, var(--tech-gold0) 0%, var(--tech-gold0) 50%, var(--tech-gold1) 50%, var(--tech-gold1) 100%);
 	  					-moz-linear-gradient(left, var(--tech-gold0) 0%, var(--tech-gold0) 50%, var(--tech-gold1) 50%, var(--tech-gold1) 100%);
-							-webkit-linear-gradient(left, var(--tech-gold0) 0%, var(--tech-gold0) 50%, var(--tech-gold1) 50%, var(--tech-gold1) 100%); 
-							
+							-webkit-linear-gradient(left, var(--tech-gold0) 0%, var(--tech-gold0) 50%, var(--tech-gold1) 50%, var(--tech-gold1) 100%);
+
 		--gt-gold-half-md-gold-rev: linear-gradient(to right, var(--tech-gold1) 0%, var(--tech-gold1) 50%, var(--tech-gold0) 50%, var(--tech-gold0) 100%);
 	  					-moz-linear-gradient(left, var(--tech-gold1) 0%, var(--tech-gold1) 50%, var(--tech-gold0) 50%, var(--tech-gold0) 100%);
-							-webkit-linear-gradient(left, var(--tech-gold1) 0%, var(--tech-gold1) 50%, var(--tech-gold0) 50%, var(--tech-gold0) 100%); 							
+							-webkit-linear-gradient(left, var(--tech-gold1) 0%, var(--tech-gold1) 50%, var(--tech-gold0) 50%, var(--tech-gold0) 100%);
 }
 
 /* -- END ROOT -- */
@@ -70,7 +70,7 @@ p.lead {
 }
 
 .subheading {
-  position: relative;	
+  position: relative;
 }
 
 .subheading::before {
@@ -120,7 +120,7 @@ p.lead {
 }
 
 .field--name-field-content-section div[class^="bg-"] {
-  position: relative;	
+  position: relative;
 }
 
 .field--name-field-content-section div[class^="bg-"]:after {
@@ -509,4 +509,11 @@ aside nav li li {
   color: var(--gt-navy2);
   content: '\25C6';
   margin-right: .25rem;
+}
+
+#block-ethicscompliance-landingpagenavigation {
+  float: left;
+}
+#block-ethicscompliance-landingpagenavigation ul {
+  list-style: none;
 }
