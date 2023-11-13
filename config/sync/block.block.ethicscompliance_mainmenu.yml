@@ -1,4 +1,4 @@
-uuid: 1e930a8d-7f44-4dd3-b21e-46bd0f75ef49
+uuid: c67f9ea5-7d70-4215-bd58-02e77b6914e7
 langcode: en
 status: true
 dependencies:
@@ -8,22 +8,18 @@ dependencies:
     - system
   theme:
     - ethicscompliance
-id: ethicscompliance_mainnavigation
+id: ethicscompliance_mainmenu
 theme: ethicscompliance
-region: sidebar_first
+region: navigation
 weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Main navigation'
-  label_display: visible
+  label: 'Main Menu'
+  label_display: '0'
   provider: system
-  level: 2
+  level: 1
   depth: 0
   expand_all_items: true
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: '/ethics/*'
+visibility: {  }

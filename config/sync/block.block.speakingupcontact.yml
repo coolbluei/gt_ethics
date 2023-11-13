@@ -11,8 +11,8 @@ dependencies:
     - ethicscompliance
 id: speakingupcontact
 theme: ethicscompliance
-region: sidebar_second
-weight: 0
+region: sidebar_first
+weight: -11
 provider: null
 plugin: 'block_content:c4eabf0c-73e6-4f84-b981-509c14a2fed2'
 settings:

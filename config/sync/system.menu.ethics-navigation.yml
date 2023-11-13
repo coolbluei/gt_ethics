@@ -1,0 +1,8 @@
+uuid: 7e1459c5-8963-46a2-846c-8612ad94281f
+langcode: en
+status: true
+dependencies: {  }
+id: ethics-navigation
+label: 'Ethics Navigation'
+description: ''
+locked: false

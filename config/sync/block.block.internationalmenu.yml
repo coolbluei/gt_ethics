@@ -10,8 +10,8 @@ dependencies:
     - ethicscompliance
 id: internationalmenu
 theme: ethicscompliance
-region: sidebar_second
-weight: 0
+region: sidebar_first
+weight: -14
 provider: null
 plugin: 'system_menu_block:international'
 settings:
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/exportandtrade\r\n/exportandtrade/contacts\r\n/exportandtrade/TCP\r\n/exportandtrade/forms\r\n/exportandtrade/resources\r\n/exportandtrade/faqs"
+    pages: "/ethics/exportandtrade\r\n/ethics/exportandtrade/*\r\n"

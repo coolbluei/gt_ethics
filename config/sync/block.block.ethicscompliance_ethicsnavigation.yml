@@ -1,23 +1,23 @@
-uuid: c4b9f401-7435-4e64-8bee-c9d4594d8492
+uuid: e27c9c84-688b-4162-93ce-f3a5f21b6381
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.privacy-menu
+    - system.menu.ethics-navigation
   module:
     - system
   theme:
     - ethicscompliance
-id: privacymenu
+id: ethicscompliance_ethicsnavigation
 theme: ethicscompliance
 region: sidebar_first
-weight: -12
+weight: -16
 provider: null
-plugin: 'system_menu_block:privacy-menu'
+plugin: 'system_menu_block:ethics-navigation'
 settings:
-  id: 'system_menu_block:privacy-menu'
-  label: 'Privacy Menu'
-  label_display: visible
+  id: 'system_menu_block:ethics-navigation'
+  label: 'Ethics Navigation'
+  label_display: '0'
   provider: system
   level: 1
   depth: 0
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/privacy\r\n/privacy-resources"
+    pages: '/ethics/*'
