@@ -11,7 +11,7 @@ dependencies:
 id: privacymenu
 theme: ethicscompliance
 region: sidebar_first
-weight: -12
+weight: -11
 provider: null
 plugin: 'system_menu_block:privacy-menu'
 settings:

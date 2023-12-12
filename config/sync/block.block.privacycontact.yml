@@ -12,7 +12,7 @@ dependencies:
 id: privacycontact
 theme: ethicscompliance
 region: sidebar_first
-weight: -13
+weight: -12
 provider: null
 plugin: 'block_content:665fd2f1-5c5e-4877-9c36-36be6834dc07'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: ethicsweekresources
 theme: ethicscompliance
 region: sidebar_first
-weight: -15
+weight: -14
 provider: null
 plugin: 'block_content:a8f8f3cc-2f09-4213-9b78-e7d1efedbe7d'
 settings:

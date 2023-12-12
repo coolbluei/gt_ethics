@@ -1,0 +1,33 @@
+uuid: 592ed3da-0bfa-4ce0-a5f5-3e6acb4d6fdf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_unit
+field_name: field_unit
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: ethics
+      label: Ethics
+    -
+      value: legal
+      label: 'Legal Affairs'
+    -
+      value: risk-management
+      label: 'Risk Management'
+    -
+      value: affiliated
+      label: 'Affiliated Organization'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

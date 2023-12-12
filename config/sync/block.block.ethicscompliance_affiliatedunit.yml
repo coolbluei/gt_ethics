@@ -1,22 +1,22 @@
-uuid: e27c9c84-688b-4162-93ce-f3a5f21b6381
+uuid: 1a443bb2-a99f-4869-a67b-c7d3a27b8a89
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.ethics-navigation
+    - system.menu.affiliated-unit
   module:
     - system
   theme:
     - ethicscompliance
-id: ethicscompliance_ethicsnavigation
+id: ethicscompliance_affiliatedunit
 theme: ethicscompliance
 region: sidebar_first
-weight: -15
+weight: -16
 provider: null
-plugin: 'system_menu_block:ethics-navigation'
+plugin: 'system_menu_block:affiliated-unit'
 settings:
-  id: 'system_menu_block:ethics-navigation'
-  label: 'Ethics Navigation'
+  id: 'system_menu_block:affiliated-unit'
+  label: 'Affiliated Unit'
   label_display: '0'
   provider: system
   level: 1
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '/ethics/*'
+    pages: '/affiliated/*'
