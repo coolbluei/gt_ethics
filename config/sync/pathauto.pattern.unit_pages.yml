@@ -1,22 +1,22 @@
-uuid: 7e64b933-7966-4972-b495-8591df51e49a
+uuid: 5090b9e7-6864-44d4-b1c1-e3341ade1a18
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: content
-label: Content
+id: unit_pages
+label: 'Unit Pages'
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: '[node:field_unit]/[node:title]'
 selection_criteria:
-  2c6107a6-2902-4c3e-b09c-a8906f2d0258:
+  6b5559bf-d324-4ba5-835b-11d695e7fc33:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 2c6107a6-2902-4c3e-b09c-a8906f2d0258
+    uuid: 6b5559bf-d324-4ba5-835b-11d695e7fc33
     context_mapping:
       node: node
     bundles:
       page: page
 selection_logic: and
-weight: -9
+weight: -10
 relationships: {  }
