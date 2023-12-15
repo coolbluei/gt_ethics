@@ -42,21 +42,6 @@ third_party_settings:
                     class: ''
             weight: 1
             additional: {  }
-          73d7a8d7-b96f-4eea-95a2-d866bb18cdd7:
-            uuid: 73d7a8d7-b96f-4eea-95a2-d866bb18cdd7
-            region: content
-            configuration:
-              id: 'field_block:node:page:field_unit'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: list_default
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-            weight: 2
-            additional: {  }
         third_party_settings: {  }
   layout_builder_restrictions:
     entity_view_mode_restriction:

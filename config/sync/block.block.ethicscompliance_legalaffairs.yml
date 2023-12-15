@@ -1,22 +1,22 @@
-uuid: 1a443bb2-a99f-4869-a67b-c7d3a27b8a89
+uuid: 0a387cc6-faa8-4b36-a4c3-d9d5fe815d42
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.affiliated-unit
+    - system.menu.legal-affairs
   module:
     - system
   theme:
     - ethicscompliance
-id: ethicscompliance_affiliatedunit
+id: ethicscompliance_legalaffairs
 theme: ethicscompliance
 region: sidebar_first
-weight: -17
+weight: -16
 provider: null
-plugin: 'system_menu_block:affiliated-unit'
+plugin: 'system_menu_block:legal-affairs'
 settings:
-  id: 'system_menu_block:affiliated-unit'
-  label: 'Affiliated Unit'
+  id: 'system_menu_block:legal-affairs'
+  label: 'Legal Affairs'
   label_display: '0'
   provider: system
   level: 1
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '/affiliated/*'
+    pages: '/legal-affairs/*'

@@ -1,0 +1,8 @@
+uuid: d319087f-cc74-4c2e-bf38-b1bb7d18ec0b
+langcode: en
+status: true
+dependencies: {  }
+id: legal-affairs
+label: 'Legal Affairs'
+description: ''
+locked: false

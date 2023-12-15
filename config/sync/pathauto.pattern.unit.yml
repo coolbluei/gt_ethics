@@ -1,18 +1,18 @@
-uuid: 5090b9e7-6864-44d4-b1c1-e3341ade1a18
+uuid: df7ef27e-04ce-47b0-b39e-f16410ca6fe2
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: unit_pages
+id: unit
 label: 'Unit Pages'
 type: 'canonical_entities:node'
 pattern: '[node:field_unit]/[node:title]'
 selection_criteria:
-  6b5559bf-d324-4ba5-835b-11d695e7fc33:
+  5d69a805-bb5f-421e-8727-2112cafb241d:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 6b5559bf-d324-4ba5-835b-11d695e7fc33
+    uuid: 5d69a805-bb5f-421e-8727-2112cafb241d
     context_mapping:
       node: node
     bundles:
