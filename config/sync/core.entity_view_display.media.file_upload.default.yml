@@ -1,0 +1,27 @@
+uuid: 7e73f675-cc18-4415-8d98-79a07a9fb07d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.file_upload.field_media_file
+    - media.type.file_upload
+  module:
+    - file
+id: media.file_upload.default
+targetEntityType: media
+bundle: file_upload
+mode: default
+content:
+  field_media_file:
+    type: file_default
+    label: visually_hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

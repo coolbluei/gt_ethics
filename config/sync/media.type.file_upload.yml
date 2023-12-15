@@ -1,0 +1,13 @@
+uuid: 70bdc84b-8b2c-46af-a6fc-bc0e287c62ea
+langcode: en
+status: true
+dependencies: {  }
+id: file_upload
+label: 'File Upload'
+description: ''
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map: {  }

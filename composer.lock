@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aec238b73906a4107dd86b7a7575ad5a",
+    "content-hash": "2b6debd5c943dfdcad7964fb3ec28158",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2569,6 +2569,54 @@
                 "source": "https://gitlab.com/drupalspoons/devel",
                 "issues": "https://gitlab.com/drupalspoons/devel/-/issues",
                 "slack": "https://drupal.slack.com/archives/C012WAW1MH6"
+            }
+        },
+        {
+            "name": "drupal/editor_advanced_link",
+            "version": "2.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/editor_advanced_link.git",
+                "reference": "2.2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/editor_advanced_link-2.2.4.zip",
+                "reference": "2.2.4",
+                "shasum": "cd0db397827f2e21ec8a68211e8a153463a6c89b"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10"
+            },
+            "require-dev": {
+                "drupal/ckeditor": "*",
+                "phpro/grumphp": "^2.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.2.4",
+                    "datestamp": "1688040059",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "DuaelFr",
+                    "homepage": "https://www.drupal.org/user/931394"
+                }
+            ],
+            "description": "Editor Advanced link",
+            "homepage": "https://www.drupal.org/project/editor_advanced_link",
+            "support": {
+                "source": "https://git.drupalcode.org/project/editor_advanced_link"
             }
         },
         {
@@ -5710,11 +5758,11 @@
         },
         {
             "name": "gt/gt_editor",
-            "version": "dev-057fc3a56a14183c4f4fddc073ebc22ed42814fd",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "gt/gt_editor",
-                "reference": "057fc3a56a14183c4f4fddc073ebc22ed42814fd"
+                "reference": "48e4277f9dbc02fec53214331ce042365c78d180"
             },
             "type": "drupal-module",
             "description": "Provides the gt_editor module, forthwith!",
@@ -5724,11 +5772,11 @@
         },
         {
             "name": "gt/gt_profile",
-            "version": "v4.0.4",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "gt/gt_profile",
-                "reference": "8f84d0497d725967e3aebff51e7628943b90d613"
+                "reference": "abe0b874055e55f5f9db277fdb1b02f9d8040385"
             },
             "type": "drupal-profile",
             "description": "GT install profile 3.x",
@@ -5738,11 +5786,11 @@
         },
         {
             "name": "gt/gt_theme",
-            "version": "v4.0.7",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "gt/gt_theme",
-                "reference": "79ce6c8d4aa9fcce39d15be2d413795951033b3a"
+                "reference": "2108e3ce516f5532a297014ec03d74dffbcd2d13"
             },
             "type": "drupal-theme",
             "description": "The GT 4.x theme",
@@ -5752,11 +5800,11 @@
         },
         {
             "name": "gt/gt_tools",
-            "version": "v4.0.3",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "gt/gt_tools",
-                "reference": "8ca5fc721682581402a1c133f0b75f5aa684be97"
+                "reference": "7d7463fdb13dfaf50bbd00ba1cb8209ca94e3240"
             },
             "type": "drupal-module",
             "description": "Provides the gt_tools module, duh.",
@@ -5766,11 +5814,11 @@
         },
         {
             "name": "gt/hg_reader",
-            "version": "v4.0.2",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "gt/hg_reader",
-                "reference": "5e93fbed8db3f7f10487b7e09fa5e54da76d22ef"
+                "reference": "930a0fd559311f271c67b746e7c6ca59353322f3"
             },
             "require": {
                 "drupal/twig_field_value": "^2.0",

@@ -49,9 +49,11 @@ settings:
         -
           name: Media
           items:
+            - DrupalMediaLibrary
             - Blockquote
             - DrupalImage
             - Table
+            - ImceImage
             - video_embed
         -
           name: 'Block Formatting'
