@@ -16,7 +16,7 @@ provider: null
 plugin: 'system_menu_block:affiliated-unit'
 settings:
   id: 'system_menu_block:affiliated-unit'
-  label: 'Affiliated Unit'
+  label: 'Affiliated Organizations'
   label_display: '0'
   provider: system
   level: 1

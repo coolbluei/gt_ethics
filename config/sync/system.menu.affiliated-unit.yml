@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: affiliated-unit
-label: 'Affiliated Unit'
+label: 'Affiliated Organizations'
 description: ''
 locked: false

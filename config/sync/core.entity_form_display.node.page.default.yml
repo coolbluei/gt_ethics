@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_unit
     - field.field.node.page.layout_builder__layout
     - node.type.page
   module:
@@ -29,6 +30,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_unit:
+    type: options_select
+    weight: 26
     region: content
     settings: {  }
     third_party_settings: {  }

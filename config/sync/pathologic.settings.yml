@@ -5,5 +5,5 @@ scheme_whitelist:
   - https
   - files
   - internal
-protocol_style: full
+protocol_style: proto-rel
 local_paths: ''
