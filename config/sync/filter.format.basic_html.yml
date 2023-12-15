@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - editor
-    - video_embed_wysiwyg
 _core:
   default_config_hash: y2SiHZlfO39ExvCB1a-haRDQp0gPah7KXdrhAFZBXek
 name: 'Basic HTML'
@@ -17,7 +16,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id class="heading-border"> <h4 id> <h5 id> <h6 id> <br> <span> <img src alt data-entity-type data-entity-uuid data-align data-caption width height> <button class="btn btn-primary"> <hr> <sup> <p class=" lead small person-title"> <i class="fas far"> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr>'
+      allowed_html: '<br> <p class="small lead person-title text-align-left text-align-center text-align-right text-align-justify"> <h2 id class="text-align-left text-align-center text-align-right text-align-justify"> <h3 class="heading-border text-align-left text-align-center text-align-right text-align-justify" id> <h4 id class="text-align-left text-align-center text-align-right text-align-justify"> <h5 id class="text-align-left text-align-center text-align-right text-align-justify"> <h6 id class="text-align-left text-align-center text-align-right text-align-justify"> <button class="btn btn-primary"> <i class="fas far"> <cite> <dl> <dt> <dd> <span> <a hreflang href> <blockquote cite> <ul type> <ol type start> <strong> <em> <code> <sup> <li> <hr> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption> <img src alt height width data-entity-uuid data-entity-type data-caption data-align>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_align:
@@ -43,12 +42,6 @@ filters:
     provider: editor
     status: true
     weight: 11
-    settings: {  }
-  video_embed_wysiwyg:
-    id: video_embed_wysiwyg
-    provider: video_embed_wysiwyg
-    status: true
-    weight: 0
     settings: {  }
   filter_image_lazy_load:
     id: filter_image_lazy_load

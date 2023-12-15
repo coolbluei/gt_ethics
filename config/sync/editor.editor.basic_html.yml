@@ -1,80 +1,106 @@
-uuid: 5bcf8154-afac-4438-bd49-1034e38ed060
+uuid: 0fdbd8d3-f1dd-4f0d-a71d-324ef29dfa2b
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.basic_html
   module:
-    - ckeditor
-    - editor_file
-third_party_settings:
-  editor_file:
-    status: true
-    scheme: public
-    directory: inline-files
-    extensions: txt
-    max_size: ''
-_core:
-  default_config_hash: PKgPCPFA2hH82LD1fqzNTmaizZdA1VyQFsrlSs-m6o8
+    - ckeditor5
 format: basic_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Superscript
-            - JustifyLeft
-            - JustifyCenter
-            - JustifyRight
-            - Outdent
-            - Indent
-            - HorizontalRule
-            - Table
-        -
-          name: Linking
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-            - video_embed
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
-        -
-          name: Tools
-          items:
-            - Source
-            - Styles
+    items:
+      - bold
+      - italic
+      - superscript
+      - alignment
+      - outdent
+      - indent
+      - horizontalLine
+      - insertTable
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - drupalInsertImage
+      - '|'
+      - heading
+      - '|'
+      - sourceEditing
+      - style
+      - '|'
+      - code
   plugins:
-    stylescombo:
-      styles: "button.btn.btn-primary|Button\r\ni.fas|Solid Icon\r\ni.far|Regular Icon\r\np.small|Small Text\r\np.lead|Intro Text\r\np.person-title|Person's Title\r\nh3.heading-border|Heading with Border"
-    video_embed:
-      defaults:
-        children:
-          autoplay: false
-          responsive: true
-          width: '854'
-          height: '480'
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_imageResize:
+      allow_resize: true
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<dl>'
+        - '<dt>'
+        - '<dd>'
+        - '<span>'
+        - '<button>'
+        - '<i>'
+        - '<a hreflang>'
+        - '<blockquote cite>'
+        - '<ul type>'
+        - '<ol type>'
+        - '<h2 id>'
+        - '<h3 id>'
+        - '<h4 id>'
+        - '<h5 id>'
+        - '<h6 id>'
+    ckeditor5_style:
+      styles:
+        -
+          label: Button
+          element: '<button class="btn btn-primary">'
+        -
+          label: 'Solid Icon'
+          element: '<i class="fas">'
+        -
+          label: 'Regular Icon'
+          element: '<i class="far">'
+        -
+          label: 'Small Text'
+          element: '<p class="small">'
+        -
+          label: 'Intro Text'
+          element: '<p class="lead">'
+        -
+          label: "Person's Title"
+          element: '<p class="person-title">'
+        -
+          label: 'Heading with Border'
+          element: '<h3 class="heading-border">'
+    editor_advanced_link_link:
+      enabled_attributes: {  }
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: null
-    height: null
+    width: 0
+    height: 0
