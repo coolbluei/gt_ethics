@@ -504,12 +504,7 @@ display:
       style:
         type: views_accordion
         options:
-          grouping:
-            -
-              field: field_unit_taxonomy
-              rendered: true
-              rendered_strip: false
-              use-grouping-header: 0
+          grouping: {  }
           row_class: ''
           default_row_class: true
           disableifone: 0
