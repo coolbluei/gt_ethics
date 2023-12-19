@@ -212,7 +212,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Subject Mater'
+          label: 'Subject Matter'
           exclude: false
           alter:
             alter_text: false
@@ -511,11 +511,11 @@ display:
           row_class: ''
           default_row_class: true
           disableifone: 0
-          row-start-open: '0'
+          row-start-open: none
           collapsible: 1
-          animated: none
+          animated: swing
           animation_time: '300'
-          heightStyle: auto
+          heightStyle: content
           event: click
           use_header_icons: 1
           icon_header: ui-icon-triangle-1-e
