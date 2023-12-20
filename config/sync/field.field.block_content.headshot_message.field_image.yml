@@ -1,0 +1,38 @@
+uuid: 4866a96c-8671-473b-b6f1-b1ea98c3dc9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.headshot_message
+    - field.storage.block_content.field_image
+  module:
+    - image
+id: block_content.headshot_message.field_image
+field_name: field_image
+entity_type: block_content
+bundle: headshot_message
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '8 MB'
+  max_resolution: 4000x4000
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

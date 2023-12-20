@@ -1,0 +1,19 @@
+uuid: 5a619e6a-eb09-4018-b2cc-a3d7a62bf194
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.headshot_message
+    - field.storage.block_content.field_headshot_name
+id: block_content.headshot_message.field_headshot_name
+field_name: field_headshot_name
+entity_type: block_content
+bundle: headshot_message
+label: 'Headshot Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

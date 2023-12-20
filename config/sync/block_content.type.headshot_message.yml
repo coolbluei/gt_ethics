@@ -1,0 +1,8 @@
+uuid: 1fc37eba-49f9-4460-b1f1-ddfce67f2873
+langcode: en
+status: true
+dependencies: {  }
+id: headshot_message
+label: 'Headshot Message'
+revision: 0
+description: 'Headshot image to the left with name and title.  Message to the right.'

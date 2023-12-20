@@ -516,3 +516,13 @@ aside nav li li {
 #block-ethicscompliance-landingpagenavigation ul {
   list-style: none;
 }
+
+.headshot-message-block-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.headshot-message-block-wrapper .headshot-wrapper {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}

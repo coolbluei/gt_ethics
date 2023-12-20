@@ -1,0 +1,24 @@
+uuid: 0b0cbc0a-8f09-4c0f-8db5-01baeb649431
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.headshot_message
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.headshot_message.body
+field_name: body
+entity_type: block_content
+bundle: headshot_message
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary
