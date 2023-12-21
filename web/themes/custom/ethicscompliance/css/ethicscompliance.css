@@ -565,7 +565,7 @@ body h6 {
   padding-top: 20px;
 }
 
-.feature-topic-section .layout__region--content {
+.feature-topic-section .layout__region--content .block {
   border: 2px solid #A4925A;
   margin: 0 16px;
   padding: 20px;
