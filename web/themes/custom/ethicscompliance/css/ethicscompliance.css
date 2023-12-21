@@ -520,9 +520,38 @@ aside nav li li {
 .headshot-message-block-wrapper {
   display: flex;
   flex-direction: row;
+  gap: 40px;
 }
 .headshot-message-block-wrapper .headshot-wrapper {
-  min-width: 300px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
+  padding:20px;
+  border: 1px solid #c2c2c2;
+  background-color: #ffffff;
+  box-shadow: 8px 4px 4px 0 rgba(0,0,0, 0.15);
+}
+.headshot-message-block-wrapper .headshot-wrapper img {
+  border:1px solid #c2c2c2;
+}
+.headshot-message-block-wrapper .headshot-text-wrapper {
+  padding-top: 15px
+}
+.headshot-message-block-wrapper .field--name-field-headshot-name {
+  color: #A4925A;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+}
+.headshot-message-block-wrapper .field--name-field-headshot-title {
+  color: #333333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.headshot-message-block-wrapper .message-text-wrapper {
+  padding-top: 20px;
 }
