@@ -565,7 +565,9 @@ body h6 {
   padding-top: 20px;
 }
 
-.feature-topic-section {
+.feature-topic-section .layout__region--content {
   border: 2px solid #A4925A;
+  margin: 0 16px;
+  padding: 20px;
   background: linear-gradient(180deg, rgba(179, 163, 105, 0.50) 0%, rgba(255, 255, 255, 0.00) 51.56%, rgba(179, 163, 105, 0.50) 97.92%), #FFF;
 }
