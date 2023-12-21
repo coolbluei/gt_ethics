@@ -510,6 +510,15 @@ aside nav li li {
   margin-right: .25rem;
 }
 
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  color: var(--gt-navy1);
+}
+
 #block-ethicscompliance-landingpagenavigation {
   float: left;
 }
@@ -554,4 +563,9 @@ aside nav li li {
 
 .headshot-message-block-wrapper .message-text-wrapper {
   padding-top: 20px;
+}
+
+.feature-topic-section {
+  border: 2px solid #A4925A;
+  background: linear-gradient(180deg, rgba(179, 163, 105, 0.50) 0%, rgba(255, 255, 255, 0.00) 51.56%, rgba(179, 163, 105, 0.50) 97.92%), #FFF;
 }
