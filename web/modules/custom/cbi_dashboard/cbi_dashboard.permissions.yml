@@ -1,0 +1,4 @@
+access dashboard:
+  title: 'Access Dashboard'
+  description: 'View the admin dashboard.'
+  restrict access: TRUE

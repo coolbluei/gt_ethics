@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.personnel_profile.field_email
     - field.field.node.personnel_profile.field_image
     - field.field.node.personnel_profile.field_job_title
+    - field.field.node.personnel_profile.field_personnel_unit
     - field.field.node.personnel_profile.field_subject_mater
     - node.type.personnel_profile
   module:
@@ -51,5 +52,6 @@ content:
     region: content
 hidden:
   body: true
+  field_personnel_unit: true
   field_subject_mater: true
   links: true

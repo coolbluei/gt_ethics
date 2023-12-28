@@ -1,0 +1,7 @@
+.toolbar-icon-system-admin-dashboard:before {
+  background-image: url(../../../../core/themes/stable/images/core/icons/787878/cog.svg);
+}
+.toolbar-icon-system-admin-dashboard:active:before,
+.toolbar-icon-system-admin-dashboard.is-active:before {
+  background-image: url(../../../../core/themes/stable/images/core/icons/787878/cog.svg);
+}

@@ -1,0 +1,5 @@
+system.admin_dashboard:
+  title: 'Dashboard'
+  parent: system.admin
+  route_name: cbi_dashboard.dashboard
+  weight: -11

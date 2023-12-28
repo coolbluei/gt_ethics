@@ -1,0 +1,5 @@
+name: CBI Dashboard
+type: module
+description: Provides dashboard routes and functionality
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom

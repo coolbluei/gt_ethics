@@ -1,0 +1,8 @@
+uuid: 55a6d1ba-0ff3-43c5-a3ef-484afe27c87e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Personnel Units'
+vid: personnel_units
+description: ''
+weight: 0

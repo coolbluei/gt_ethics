@@ -1,0 +1,7 @@
+cbi_dashboard.dashboard:
+  path: '/admin/dashboard'
+  defaults:
+    _controller: 'Drupal\cbi_dashboard\Controller\PageController::blankContent'
+    _title: 'Dashboard'
+  requirements:
+    _permission: 'access dashboard'

@@ -1,0 +1,17 @@
+global:
+  version: 1.x
+  js:
+    js/app.js: {}
+  dependencies:
+    - core/jquery
+toolbar:
+  version: 1.x
+  css:
+    theme:
+      css/dashboard.css: {}
+node.form:
+  version: 1.x
+  js:
+    js/node.form.js: {}
+  dependencies:
+    - core/jquery

@@ -1,0 +1,29 @@
+uuid: da54eafa-04e7-41c7-a156-2d1023c810f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_personnel_unit
+    - node.type.personnel_profile
+    - taxonomy.vocabulary.units
+id: node.personnel_profile.field_personnel_unit
+field_name: field_personnel_unit
+entity_type: node
+bundle: personnel_profile
+label: Unit
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      units: units
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

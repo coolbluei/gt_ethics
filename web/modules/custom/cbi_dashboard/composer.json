@@ -1,0 +1,14 @@
+{
+  "name": "drupal/cbi_dashboard",
+  "type": "drupal-module",
+  "description": "Provides dashboard routes and functionality",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/cbi_dashboard",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/cbi_dashboard",
+    "source": "http://cgit.drupalcode.org/cbi_dashboard"
+  },
+  "require": { }
+}

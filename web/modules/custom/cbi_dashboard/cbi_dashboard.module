@@ -1,0 +1,74 @@
+<?php
+
+/**
+ * @file
+ * Contains cbi_dashboard.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Breadcrumb\Breadcrumb;
+use Drupal\Core\Form\FormStateInterface;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function cbi_dashboard_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cbi_dashboard module.
+    case 'help.page.cbi_dashboard':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides dashboard routes and functionality') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function cbi_dashboard_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  return;
+  // Attach library to hide advanced tab on node edit forms for users other than root
+  if(preg_match("/^node_[a-z]+_edit_form$/", $form_id)) {
+    $user = \Drupal::currentUser();
+    if((int) $user->id() != 1) {
+      $form['#attached']['library'][] = 'cbi_dashboard/node.form';
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_hook().
+ */
+function cbi_dashboard_preprocess_breadcrumb(&$variables) {
+  return;
+  $theme = \Drupal::service('theme.manager')->getActiveTheme();
+  $config = \Drupal::config('system.theme')->getRawData();
+
+  if($theme->getName() == $config['admin'] && \Drupal::currentUser()->id() != 1) {
+    for($i = count($variables['breadcrumb']) - 1; $i > 0; $i--) {
+      unset($variables['breadcrumb'][$i]);
+    }
+
+    if(\Drupal::routeMatch()->getRouteName() != 'cbi_dashboard.dashboard') {
+      $variables['breadcrumb'][] = array(
+        'text' => 'Dashboard',
+        'url' => '/admin/dashboard',
+      );
+    }
+  }
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function cbi_dashboard_page_attachments_alter(array &$attachments) {
+  if(\Drupal::currentUser()->hasPermission('access toolbar')) {
+    $attachments['#attached']['library'][] = 'cbi_dashboard/toolbar';
+  }
+}
