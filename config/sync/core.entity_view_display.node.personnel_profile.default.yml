@@ -1,0 +1,57 @@
+uuid: 5a2a4ec5-22f2-45d2-af17-b44014522fc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.personnel_profile.body
+    - field.field.node.personnel_profile.field_email
+    - field.field.node.personnel_profile.field_image
+    - field.field.node.personnel_profile.field_job_title
+    - field.field.node.personnel_profile.field_subject_mater
+    - image.style.large
+    - node.type.personnel_profile
+  module:
+    - image
+    - user
+id: node.personnel_profile.default
+targetEntityType: node
+bundle: personnel_profile
+mode: default
+content:
+  field_email:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_job_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_subject_mater:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  body: true
+  links: true

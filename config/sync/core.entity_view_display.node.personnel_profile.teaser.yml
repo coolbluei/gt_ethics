@@ -1,0 +1,53 @@
+uuid: a52f4123-78af-4cd1-95db-9104c358d63e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.personnel_profile.body
+    - field.field.node.personnel_profile.field_email
+    - field.field.node.personnel_profile.field_image
+    - field.field.node.personnel_profile.field_job_title
+    - field.field.node.personnel_profile.field_subject_mater
+    - node.type.personnel_profile
+  module:
+    - field_formatter_class
+    - image
+    - user
+id: node.personnel_profile.teaser
+targetEntityType: node
+bundle: personnel_profile
+mode: teaser
+content:
+  field_email:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+  field_job_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_subject_mater: true
+  links: true
