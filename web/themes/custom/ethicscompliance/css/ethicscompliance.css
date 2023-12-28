@@ -538,7 +538,7 @@ body h6 {
   padding:20px;
   border: 1px solid #c2c2c2;
   background-color: #ffffff;
-  box-shadow: 8px 4px 4px 0 rgba(0,0,0, 0.15);
+  box-shadow: 0px 4px 4px 0 rgba(0,0,0, 0.15);
 }
 .headshot-message-block-wrapper .headshot-wrapper img {
   border:1px solid #c2c2c2;
