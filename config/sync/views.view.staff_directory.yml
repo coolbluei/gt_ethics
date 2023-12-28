@@ -134,6 +134,12 @@ display:
             personnel_profile: personnel_profile
       style:
         type: grid_responsive
+        options:
+          uses_fields: false
+          columns: 4
+          cell_min_width: 200
+          grid_gutter: 40
+          alignment: horizontal
       row:
         type: 'entity:node'
         options:
@@ -165,6 +171,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+      block_description: 'Staff Directory'
     cache_metadata:
       max-age: -1
       contexts:

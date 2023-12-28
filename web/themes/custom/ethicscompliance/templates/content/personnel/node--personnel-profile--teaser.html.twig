@@ -79,20 +79,16 @@
 ]
 %}
 
-
-  <div class="headshot-message-block-wrapper">
-    <div class="headshot-wrapper">
-      {{ content.field_image }}
-      <div class="headshot-text-wrapper">
-        {{ title_prefix }}
-        {% if label %}
-          <h3{{ title_attributes }}>{{ label }}</h3>
-        {% endif %}
-        {{ title_suffix }}
-
-        {{ content.field_job_title }}
-        {{ content|without('field_image', 'field_job_title') }}
-      </div>
+<article{{ attributes.addClass(classes) }}>
+  <div class="headshot-wrapper">
+    {{ content.field_image }}
+    <div class="headshot-text-wrapper">
+      {{ title_prefix }}
+      {% if label %}
+        <h3{{ title_attributes }}>{{ label }}</h3>
+      {% endif %}
+      {{ content.field_job_title }}
+      {{ content|without('field_image', 'field_job_title') }}
     </div>
   </div>
-
+</article>

@@ -531,8 +531,7 @@ body h6 {
   flex-direction: row;
   gap: 40px;
 }
-.headshot-message-block-wrapper .headshot-wrapper {
-  min-width: 320px;
+.headshot-wrapper {
   display: flex;
   flex-direction: column;
   padding:20px;
@@ -540,10 +539,14 @@ body h6 {
   background-color: #ffffff;
   box-shadow: 0px 4px 4px 0 rgba(0,0,0, 0.15);
 }
-.headshot-message-block-wrapper .headshot-wrapper img {
+
+.headshot-message-block-wrapper .headshot-wrapper {
+  min-width: 320px;
+}
+.headshot-wrapper img {
   border:1px solid #c2c2c2;
 }
-.headshot-message-block-wrapper .headshot-text-wrapper {
+.headshot-text-wrapper {
   padding-top: 15px
 }
 .headshot-message-block-wrapper .field--name-field-headshot-name {
