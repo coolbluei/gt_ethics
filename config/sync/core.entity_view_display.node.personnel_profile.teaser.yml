@@ -20,10 +20,12 @@ bundle: personnel_profile
 mode: teaser
 content:
   field_email:
-    type: basic_string
+    type: email_mailto
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 2
     region: content
   field_image:

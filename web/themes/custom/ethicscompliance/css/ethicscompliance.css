@@ -549,19 +549,25 @@ body h6 {
 .headshot-text-wrapper {
   padding-top: 15px
 }
-.headshot-message-block-wrapper .field--name-field-headshot-name {
+.headshot-message-block-wrapper .field--name-field-headshot-name,
+article.node--type-personnel-profile h3 {
   color: #A4925A;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 1;
 }
-.headshot-message-block-wrapper .field--name-field-headshot-title {
+.headshot-message-block-wrapper .field--name-field-headshot-title,
+article.node--type-personnel-profile .field--name-field-job-title {
   color: #333333;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.4;
+}
+article.node--type-personnel-profile .field--name-field-email a {
+  text-decoration: none;
+  border-bottom: 3px solid #EEB211;
 }
 
 .headshot-message-block-wrapper .message-text-wrapper {
