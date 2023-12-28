@@ -556,6 +556,7 @@ article.node--type-personnel-profile h3 {
   font-style: normal;
   font-weight: 700;
   line-height: 1;
+  margin-top: 0;
 }
 .headshot-message-block-wrapper .field--name-field-headshot-title,
 article.node--type-personnel-profile .field--name-field-job-title {
