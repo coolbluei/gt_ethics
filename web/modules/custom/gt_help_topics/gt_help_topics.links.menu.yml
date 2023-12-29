@@ -1,0 +1,14 @@
+
+# GT Help Topic menu items definition
+entity.gt_help_topic_entity.collection:
+  title: 'GT Help Topic list'
+  route_name: entity.gt_help_topic_entity.collection
+  description: 'List GT Help Topic entities'
+  parent: system.admin_structure
+  weight: 100
+
+gt_help_topic_entity.admin.structure.settings:
+  title: 'GT Help Topic settings'
+  description: 'Configure GT Help Topic entities'
+  route_name: gt_help_topic_entity.settings
+  parent: system.admin_structure

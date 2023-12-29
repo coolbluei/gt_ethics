@@ -1,0 +1,38 @@
+uuid: 5594c293-fec2-45bb-8e6b-79c27e842e14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.gt_help_topic_entity.gt_help_topic_entity.field_destination
+    - field.field.gt_help_topic_entity.gt_help_topic_entity.field_unit
+  module:
+    - gt_help_topics
+    - link
+id: gt_help_topic_entity.gt_help_topic_entity.default
+targetEntityType: gt_help_topic_entity
+bundle: gt_help_topic_entity
+mode: default
+content:
+  field_destination:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_unit:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

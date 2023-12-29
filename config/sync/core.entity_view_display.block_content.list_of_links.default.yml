@@ -1,0 +1,27 @@
+uuid: 87217826-0d14-4309-94a7-9e7be7dc3b47
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.list_of_links
+    - field.field.block_content.list_of_links.field_common_links
+  module:
+    - link
+id: block_content.list_of_links.default
+targetEntityType: block_content
+bundle: list_of_links
+mode: default
+content:
+  field_common_links:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

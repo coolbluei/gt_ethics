@@ -1,0 +1,14 @@
+
+# GT Legal FAQ menu items definition
+entity.gt_legal_faq_entity.collection:
+  title: 'GT Legal FAQ list'
+  route_name: entity.gt_legal_faq_entity.collection
+  description: 'List GT Legal FAQ entities'
+  parent: system.admin_structure
+  weight: 100
+
+gt_legal_faq_entity.admin.structure.settings:
+  title: 'GT Legal FAQ settings'
+  description: 'Configure GT Legal FAQ entities'
+  route_name: gt_legal_faq_entity.settings
+  parent: system.admin_structure

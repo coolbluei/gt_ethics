@@ -1,0 +1,5 @@
+name: 'GT Help Topics'
+type: module
+description: 'GT Help Topics'
+core_version_requirement: ^9.3 || ^10
+package: 'Custom'

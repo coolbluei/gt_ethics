@@ -1,0 +1,5 @@
+entity.gt_help_topic_entity.add_form:
+  route_name: entity.gt_help_topic_entity.add_form
+  title: 'Add GT Help Topic'
+  appears_on:
+    - entity.gt_help_topic_entity.collection

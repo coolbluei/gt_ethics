@@ -1,0 +1,5 @@
+name: 'GT Legal FAQ'
+type: module
+description: 'GT Legal FAQ Entity'
+core_version_requirement: ^9.3 || ^10
+package: 'Custom'

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains gt_legal_faq.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function gt_legal_faq_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the gt_legal_faq module.
+    case 'help.page.gt_legal_faq':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('GT Legal FAQ Entity') . '</p>';
+      return $output;
+
+    default:
+  }
+}

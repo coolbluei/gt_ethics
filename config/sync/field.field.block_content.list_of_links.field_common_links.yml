@@ -1,0 +1,23 @@
+uuid: 711830e6-964a-4e8a-a233-fa116b96426d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.list_of_links
+    - field.storage.block_content.field_common_links
+  module:
+    - link
+id: block_content.list_of_links.field_common_links
+field_name: field_common_links
+entity_type: block_content
+bundle: list_of_links
+label: 'Common Links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

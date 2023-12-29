@@ -1,0 +1,20 @@
+add gt help topic entities:
+  title: 'Create new GT Help Topic entities'
+
+administer gt help topic entities:
+  title: 'Administer GT Help Topic entities'
+  description: 'Allow to access the administration form to configure GT Help Topic entities.'
+  restrict access: true
+
+delete gt help topic entities:
+  title: 'Delete GT Help Topic entities'
+
+edit gt help topic entities:
+  title: 'Edit GT Help Topic entities'
+
+view published gt help topic entities:
+  title: 'View published GT Help Topic entities'
+
+view unpublished gt help topic entities:
+  title: 'View unpublished GT Help Topic entities'
+

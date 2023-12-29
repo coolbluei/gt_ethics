@@ -41,6 +41,8 @@ module:
   filter: 0
   focal_point: 0
   gt_editor: 0
+  gt_help_topics: 0
+  gt_legal_faq: 0
   gt_tools: 0
   help: 0
   hg_reader: 0

@@ -1,0 +1,21 @@
+# GT Help Topic routing definition
+gt_help_topic_entity.settings_tab:
+  route_name: gt_help_topic_entity.settings
+  title: 'Settings'
+  base_route: gt_help_topic_entity.settings
+
+entity.gt_help_topic_entity.canonical:
+  route_name: entity.gt_help_topic_entity.canonical
+  base_route: entity.gt_help_topic_entity.canonical
+  title: 'View'
+
+entity.gt_help_topic_entity.edit_form:
+  route_name: entity.gt_help_topic_entity.edit_form
+  base_route: entity.gt_help_topic_entity.canonical
+  title: 'Edit'
+
+entity.gt_help_topic_entity.delete_form:
+  route_name:  entity.gt_help_topic_entity.delete_form
+  base_route:  entity.gt_help_topic_entity.canonical
+  title: Delete
+  weight: 10

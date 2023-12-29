@@ -1,0 +1,5 @@
+entity.gt_legal_faq_entity.add_form:
+  route_name: entity.gt_legal_faq_entity.add_form
+  title: 'Add GT Legal FAQ'
+  appears_on:
+    - entity.gt_legal_faq_entity.collection

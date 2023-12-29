@@ -1,0 +1,31 @@
+add gt legal faq entities:
+  title: 'Create new GT Legal FAQ entities'
+
+administer gt legal faq entities:
+  title: 'Administer GT Legal FAQ entities'
+  description: 'Allow to access the administration form to configure GT Legal FAQ entities.'
+  restrict access: true
+
+delete gt legal faq entities:
+  title: 'Delete GT Legal FAQ entities'
+
+edit gt legal faq entities:
+  title: 'Edit GT Legal FAQ entities'
+
+view published gt legal faq entities:
+  title: 'View published GT Legal FAQ entities'
+
+view unpublished gt legal faq entities:
+  title: 'View unpublished GT Legal FAQ entities'
+
+view all gt legal faq revisions:
+  title: 'View all GT Legal FAQ revisions'
+
+revert all gt legal faq revisions:
+  title: 'Revert all GT Legal FAQ revisions'
+  description: 'Role requires permission <em>view GT Legal FAQ revisions</em> and <em>edit rights</em> for gt legal faq entities in question or <em>administer gt legal faq entities</em>.'
+
+delete all gt legal faq revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view GT Legal FAQ revisions</em> and <em>delete rights</em> for gt legal faq entities in question or <em>administer gt legal faq entities</em>.'
+

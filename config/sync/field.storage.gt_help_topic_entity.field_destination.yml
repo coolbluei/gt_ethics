@@ -1,0 +1,19 @@
+uuid: 9354d30e-bbb6-49e0-881c-5086ca29083f
+langcode: en
+status: true
+dependencies:
+  module:
+    - gt_help_topics
+    - link
+id: gt_help_topic_entity.field_destination
+field_name: field_destination
+entity_type: gt_help_topic_entity
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

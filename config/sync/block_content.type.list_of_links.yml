@@ -1,0 +1,8 @@
+uuid: 0bb2e38a-0114-4434-9a78-efd91b3a11bc
+langcode: en
+status: true
+dependencies: {  }
+id: list_of_links
+label: 'List of Links'
+revision: 0
+description: 'Create a list of common links'

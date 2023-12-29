@@ -1,0 +1,30 @@
+uuid: 5b8731ae-0325-4d0d-a9ed-0d99a9cda6f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.gt_help_topic_entity.field_unit
+    - taxonomy.vocabulary.units
+  module:
+    - gt_help_topics
+id: gt_help_topic_entity.gt_help_topic_entity.field_unit
+field_name: field_unit
+entity_type: gt_help_topic_entity
+bundle: gt_help_topic_entity
+label: Unit
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      units: units
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

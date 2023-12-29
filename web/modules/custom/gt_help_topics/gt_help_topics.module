@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains gt_help_topics.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function gt_help_topics_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the gt_help_topics module.
+    case 'help.page.gt_help_topics':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('GT Help Topics') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function gt_help_topics_theme() {
+  return [
+    'unit_help_topic_block' => [
+      'variables' => [
+        'content' => NULL
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}
