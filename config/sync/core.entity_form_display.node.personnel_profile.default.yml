@@ -50,18 +50,8 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_personnel_unit:
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     weight: 4
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_subject_mater:
-    type: entity_reference_autocomplete
-    weight: 12
     region: content
     settings:
       match_operator: CONTAINS
@@ -121,3 +111,4 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_subject_mater: true

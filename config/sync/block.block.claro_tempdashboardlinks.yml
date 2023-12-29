@@ -1,0 +1,30 @@
+uuid: 6893bb75-7547-406d-9762-67eb7ae0b158
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8e254b6c-25de-4001-9b45-df8672d1c78a'
+  module:
+    - block_content
+    - system
+  theme:
+    - claro
+id: claro_tempdashboardlinks
+theme: claro
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:8e254b6c-25de-4001-9b45-df8672d1c78a'
+settings:
+  id: 'block_content:8e254b6c-25de-4001-9b45-df8672d1c78a'
+  label: 'Temp Dashboard Links'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /admin/dashboard

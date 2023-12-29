@@ -45,15 +45,8 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_subject_mater:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 3
-    region: content
 hidden:
   body: true
   field_personnel_unit: true
+  field_subject_mater: true
   links: true
