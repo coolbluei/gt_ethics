@@ -531,6 +531,7 @@ body h6 {
   flex-direction: row;
   gap: 40px;
 }
+
 .headshot-wrapper {
   display: flex;
   flex-direction: column;
@@ -543,6 +544,17 @@ body h6 {
 .headshot-message-block-wrapper .headshot-wrapper {
   min-width: 320px;
 }
+
+.view-staff-directory .views-view-responsive-grid--horizontal {
+  align-items: stretch;
+}
+
+.view-staff-directory .views-view-responsive-grid__item-inner,
+.view-staff-directory .views-view-responsive-grid__item-inner article,
+.view-staff-directory .views-view-responsive-grid__item-inner article .headshot-wrapper {
+  height: 100%;
+}
+
 .headshot-wrapper img {
   border:1px solid #c2c2c2;
 }

@@ -24,10 +24,8 @@ content:
     type: email_mailto
     label: hidden
     settings: {  }
-    third_party_settings:
-      field_formatter_class:
-        class: ''
-    weight: 2
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_image:
     type: image

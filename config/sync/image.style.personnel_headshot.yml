@@ -1,0 +1,15 @@
+uuid: 88a3803d-8887-49a1-a41f-68cd9fdc96ad
+langcode: en
+status: true
+dependencies: {  }
+name: personnel_headshot
+label: 'Personnel Headshot'
+effects:
+  e53a73ee-d298-4e4b-85ac-8f0c1ad10946:
+    uuid: e53a73ee-d298-4e4b-85ac-8f0c1ad10946
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 1200
+      anchor: center-center

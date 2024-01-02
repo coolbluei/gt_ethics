@@ -20,7 +20,7 @@ bundle: personnel_profile
 mode: default
 content:
   field_email:
-    type: basic_string
+    type: email_mailto
     label: hidden
     settings: {  }
     third_party_settings: {  }
