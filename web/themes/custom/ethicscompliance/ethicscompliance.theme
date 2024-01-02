@@ -62,3 +62,14 @@ function ethicscompliance_preprocess_layout__onecol(&$variables): void
   }
 }
 
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function ethicscompliance_preprocess_field(&$variables)
+{
+  // Replace the default email title with a fixed string.
+  if ($variables['element']['#field_name'] === 'field_email') {
+    $variables['items'][0]['content']['#title'] = 'Email';
+  }
+}
+
