@@ -12,7 +12,7 @@ dependencies:
 id: ethicscompliance_tempdashboardlinks
 theme: ethicscompliance
 region: content
-weight: 0
+weight: -17
 provider: null
 plugin: 'block_content:8e254b6c-25de-4001-9b45-df8672d1c78a'
 settings:
