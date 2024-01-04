@@ -1,0 +1,20 @@
+uuid: daf5b6e0-3a4f-4d9c-97d3-03d100f0c8ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - gt_legal_faq
+    - taxonomy
+id: gt_legal_faq_entity.field_subject_matter
+field_name: field_subject_matter
+entity_type: gt_legal_faq_entity
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

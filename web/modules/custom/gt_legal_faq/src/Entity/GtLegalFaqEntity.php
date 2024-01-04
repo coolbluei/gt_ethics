@@ -98,20 +98,20 @@ class GtLegalFaqEntity extends EditorialContentEntityBase implements GtLegalFaqE
   public function preSave(EntityStorageInterface $storage) {
     parent::preSave($storage);
 
-    foreach (array_keys($this->getTranslationLanguages()) as $langcode) {
-      $translation = $this->getTranslation($langcode);
-
-      // If no owner has been set explicitly, make the anonymous user the owner.
-      if (!$translation->getOwner()) {
-        $translation->setOwnerId(0);
-      }
-    }
-
-    // If no revision author has been set explicitly,
-    // make the gt_legal_faq_entity owner the revision author.
-    if (!$this->getRevisionUser()) {
-      $this->setRevisionUserId($this->getOwnerId());
-    }
+//    foreach (array_keys($this->getTranslationLanguages()) as $langcode) {
+//      $translation = $this->getTranslation($langcode);
+//
+//      // If no owner has been set explicitly, make the anonymous user the owner.
+//      if (!$translation->getOwner()) {
+//        $translation->setOwnerId(0);
+//      }
+//    }
+//
+//    // If no revision author has been set explicitly,
+//    // make the gt_legal_faq_entity owner the revision author.
+//    if (!$this->getRevisionUser()) {
+//      $this->setRevisionUserId($this->getOwnerId());
+//    }
   }
 
   /**
@@ -158,7 +158,7 @@ class GtLegalFaqEntity extends EditorialContentEntityBase implements GtLegalFaqE
       ->setDescription(t('The Question of the GT Legal FAQ entity.'))
       ->setRevisionable(TRUE)
       ->setSettings([
-        'max_length' => 50,
+        'max_length' => 512,
         'text_processing' => 0,
       ])
       ->setDefaultValue('')

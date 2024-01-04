@@ -1,0 +1,48 @@
+uuid: 6566b11e-5ddf-4fd1-9f3d-bfbeb4d02b0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.gt_legal_faq_entity.gt_legal_faq_entity.field_answer
+    - field.field.gt_legal_faq_entity.gt_legal_faq_entity.field_subject_matter
+    - field.field.gt_legal_faq_entity.gt_legal_faq_entity.field_unit_taxonomy
+  module:
+    - gt_legal_faq
+    - text
+id: gt_legal_faq_entity.gt_legal_faq_entity.default
+targetEntityType: gt_legal_faq_entity
+bundle: gt_legal_faq_entity
+mode: default
+content:
+  field_answer:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  field_subject_matter:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  field_unit_taxonomy:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden: {  }

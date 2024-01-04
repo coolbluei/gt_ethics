@@ -12,7 +12,9 @@
     'clear-both',
 ] %}
 <div{{ attributes.addClass(classes) }}>
-    {% for value in content %}
-        <p>{{value}}</p>
-    {% endfor %}
+  <p>{{ content.intro }}</p>
+  <h2>I want:</h2>
+  <p>{{ content.unit_select }}</p>
+  <h3>Topics</h3>
+  <p>{{ content.unit_topics }}</p>
 </div>

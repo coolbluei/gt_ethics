@@ -32,7 +32,6 @@ module:
   editor_advanced_link: 0
   editor_file: 0
   entity_reference_revisions: 0
-  faqfield: 0
   field: 0
   field_formatter_class: 0
   field_group: 0
@@ -83,6 +82,7 @@ module:
   quickedit: 0
   rdf: 0
   redirect: 0
+  safe_field_getter: 0
   search: 0
   search404: 0
   shortcut: 0

@@ -1,0 +1,24 @@
+uuid: 0905d2f9-2bd5-4904-a8f9-928e7f6d06af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.gt_legal_faq_entity.field_answer
+    - filter.format.full_html
+  module:
+    - gt_legal_faq
+    - text
+id: gt_legal_faq_entity.gt_legal_faq_entity.field_answer
+field_name: field_answer
+entity_type: gt_legal_faq_entity
+bundle: gt_legal_faq_entity
+label: Answer
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

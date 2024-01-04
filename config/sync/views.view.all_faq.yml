@@ -7,7 +7,6 @@ dependencies:
     - field.storage.node.field_subject_mater
     - field.storage.node.field_unit_taxonomy
     - node.type.faq
-    - system.menu.main
     - taxonomy.vocabulary.tags
     - taxonomy.vocabulary.units
   content:
@@ -1016,9 +1015,9 @@ display:
         filters: false
         filter_groups: false
       display_extenders: {  }
-      path: all-faqs
+      path: legal-faqs
       menu:
-        type: normal
+        type: none
         title: 'All FAQs'
         description: ''
         weight: -46
