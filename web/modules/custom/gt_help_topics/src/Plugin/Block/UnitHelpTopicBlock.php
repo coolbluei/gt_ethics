@@ -3,9 +3,12 @@
 namespace Drupal\gt_help_topics\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Cache\Cache;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element\Url;
+use Drupal\safe_field_getter\SafeFieldGetter;
 use Drupal\taxonomy\TermStorageInterface;
 
 /**
@@ -66,7 +69,16 @@ class UnitHelpTopicBlock extends BlockBase {
     $build['#theme'] = 'unit_help_topic_block';
     $build['#content']['intro'] = $this->configuration['intro'];
     $build['#content']['unit_select'] = $this->getUnitName($this->configuration['unit_select']);
-    $build['#content']['unit_topics'] = $this->getRenderArrayForUnitTopics($this->configuration['unit_select']);
+    list($selectOptions, $targets) = $this->getRenderArrayForUnitTopics($this->configuration['unit_select']);
+    $build['#content']['unit_topics'] = [
+      '#type' => 'select',
+      '#options' => $selectOptions,
+    ];
+    // Add library and settings.
+    $build['#attached']['library'][] = 'gt_help_topics/gthelptopics';
+    $build['#attached']['drupalSettings']['helpTopicsButtonTargets'] = $targets;
+
+    // Set cache tags for unit.
 
     return $build;
   }
@@ -96,12 +108,35 @@ class UnitHelpTopicBlock extends BlockBase {
       ];
     }
     // build select list???
-    return [];
+    $select_options = [0 => 'Select a Topic'];
+    $targets = [ 0 => ''];
+    foreach ($options as $option) {
+      $select_options[$option->id()] = $option->label();
+      $linkField = SafeFieldGetter::firstComplex($option, 'field_destination');
+      $targets[$option->id()] = \Drupal\Core\Url::fromUri($linkField['uri'],['absolute' => TRUE])->toString();
+    }
+    return [$select_options, $targets];
   }
 
   protected function getUnitName($unit_id) {
     $unitArray = $this->buildUnitSelect();
     return $unitArray[$unit_id];
   }
+  public function getCacheTags() {
+    //With this when your node change your block will rebuild
+    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+      //if there is node add its cachetag
+      return Cache::mergeTags(parent::getCacheTags(), array('node:' . $node->id()));
+    } else {
+      //Return default tags instead.
+      return parent::getCacheTags();
+    }
+  }
 
+  public function getCacheContexts() {
+    //if you depends on \Drupal::routeMatch()
+    //you must set context of this block with 'route' context tag.
+    //Every new route this block will rebuild
+    return Cache::mergeContexts(parent::getCacheContexts(), array('route'));
+  }
 }

@@ -11,10 +11,11 @@
 {% set classes = [
     'clear-both',
 ] %}
-<div{{ attributes.addClass(classes) }}>
+<div id="gt-help-topics-unit-block" {{ attributes.addClass(classes) }}>
   <p>{{ content.intro }}</p>
   <h2>I want:</h2>
-  <p>{{ content.unit_select }}</p>
-  <h3>Topics</h3>
-  <p>{{ content.unit_topics }}</p>
+  <div id="help-topic-select" class="control-wrapper">
+    {{ content.unit_topics }}
+    <div id="topic-go-button" class="button">GO</div>
+  </div>
 </div>

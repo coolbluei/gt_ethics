@@ -1,0 +1,13 @@
+gthelptopics:
+  version: 1.x
+  js:
+    js/buttonTarget.js: {}
+    dependencies:
+      - core/jquery
+      - core/once
+      - core/drupal
+      - core/drupalSettings
+  css:
+    theme:
+      css/buttonTarget.css:
+        weight: -10
