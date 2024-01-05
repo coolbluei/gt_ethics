@@ -111,7 +111,7 @@ class UnitHelpTopicBlock extends BlockBase {
     $select_options = [0 => 'Select a Topic'];
     $targets = [ 0 => ''];
     foreach ($options as $option) {
-      $select_options[$option->id()] = $option->label();
+      $select_options[$option->id()] = SafeFieldGetter::firstSimple($option, 'field_question_topic');
       $linkField = SafeFieldGetter::firstComplex($option, 'field_destination');
       $targets[$option->id()] = \Drupal\Core\Url::fromUri($linkField['uri'],['absolute' => TRUE])->toString();
     }

@@ -1,16 +1,16 @@
-uuid: 183cfb1d-cfe1-4ec8-9c3d-73e4d4d2f36a
+uuid: 73e13a6b-8a7b-475c-b2e9-6d73883cef59
 langcode: en
 status: true
 dependencies:
   module:
     - gt_help_topics
-    - link
-id: gt_help_topic_entity.field_destination
-field_name: field_destination
+id: gt_help_topic_entity.field_question_topic
+field_name: field_question_topic
 entity_type: gt_help_topic_entity
-type: link
-settings: {  }
-module: link
+type: string_long
+settings:
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

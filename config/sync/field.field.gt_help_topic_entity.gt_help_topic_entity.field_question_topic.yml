@@ -1,0 +1,20 @@
+uuid: 307eb413-3fc5-40fd-8aed-c3daa6ac75f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.gt_help_topic_entity.field_question_topic
+  module:
+    - gt_help_topics
+id: gt_help_topic_entity.gt_help_topic_entity.field_question_topic
+field_name: field_question_topic
+entity_type: gt_help_topic_entity
+bundle: gt_help_topic_entity
+label: Question/Topic
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

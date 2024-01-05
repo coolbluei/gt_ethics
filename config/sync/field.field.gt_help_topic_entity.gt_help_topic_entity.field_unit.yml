@@ -1,10 +1,12 @@
-uuid: 5b8731ae-0325-4d0d-a9ed-0d99a9cda6f8
+uuid: 1d40241d-cc14-44f3-adae-9621a855e27a
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.gt_help_topic_entity.field_unit
     - taxonomy.vocabulary.units
+  content:
+    - 'taxonomy_term:units:542e22d1-c127-4e39-b9d1-319975b49974'
   module:
     - gt_help_topics
 id: gt_help_topic_entity.gt_help_topic_entity.field_unit
@@ -13,9 +15,11 @@ entity_type: gt_help_topic_entity
 bundle: gt_help_topic_entity
 label: Unit
 description: ''
-required: true
+required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    target_uuid: 542e22d1-c127-4e39-b9d1-319975b49974
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'

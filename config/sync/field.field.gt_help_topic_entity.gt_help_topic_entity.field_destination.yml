@@ -1,4 +1,4 @@
-uuid: 365d3648-216f-49ac-b935-ddd46754f864
+uuid: 15d215fc-37cd-4f07-82fc-07a4a6bdc11d
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ entity_type: gt_help_topic_entity
 bundle: gt_help_topic_entity
 label: Destination
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

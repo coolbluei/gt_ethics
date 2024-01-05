@@ -2,6 +2,7 @@
 
 namespace Drupal\gt_help_topics\Entity;
 
+use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Entity\ContentEntityBase;
 use Drupal\Core\Entity\EntityChangedTrait;
@@ -99,10 +100,10 @@ class GtHelpTopicEntity extends ContentEntityBase implements GtHelpTopicEntityIn
     $fields += static::publishedBaseFieldDefinitions($entity_type);
 
     $fields['name'] = BaseFieldDefinition::create('string')
-      ->setLabel(t('Topic'))
+      ->setLabel(t('Admin Name'))
       ->setDescription(t('The name of the GT Help Topic entity.'))
       ->setSettings([
-        'max_length' => 50,
+        'max_length' => 255,
         'text_processing' => 0,
       ])
       ->setDefaultValue('')
