@@ -1,17 +1,18 @@
-uuid: a7a27e6d-0ecf-48f3-84fa-4ca2c78b153d
+uuid: 491251fa-96c4-4196-856d-f336cd054b90
 langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_last_name
     - node.type.personnel_profile
-id: node.personnel_profile.title
-field_name: title
+id: node.personnel_profile.field_last_name
+field_name: field_last_name
 entity_type: node
 bundle: personnel_profile
-label: 'Display Name'
+label: 'Last Name'
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

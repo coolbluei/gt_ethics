@@ -6,8 +6,10 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.personnel_profile.body
     - field.field.node.personnel_profile.field_email
+    - field.field.node.personnel_profile.field_first_name
     - field.field.node.personnel_profile.field_image
     - field.field.node.personnel_profile.field_job_title
+    - field.field.node.personnel_profile.field_last_name
     - field.field.node.personnel_profile.field_personnel_unit
     - field.field.node.personnel_profile.field_subject_mater
     - node.type.personnel_profile
@@ -50,6 +52,8 @@ content:
     region: content
 hidden:
   body: true
+  field_first_name: true
+  field_last_name: true
   field_personnel_unit: true
   field_subject_mater: true
   links: true
