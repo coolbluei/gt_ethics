@@ -62,6 +62,19 @@ function ethicscompliance_preprocess_layout__onecol(&$variables): void
   }
 }
 
+function ethicscompliance_preprocess_layout__twocol_section(&$variables): void
+{
+  if (!isset($variables['content']['#settings']['label'])) {
+    // No label, skip work.
+    return;
+  }
+  $label = $variables['content']['#settings']['label'];
+  if (!empty($label)) {
+    // make sure its class friendly
+    $variables['attributes']['class'][] = str_replace(' ', '-', strtolower($label));
+  }
+}
+
 /**
  * Implements hook_preprocess_HOOK().
  */

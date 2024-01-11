@@ -97,6 +97,7 @@ p.lead {
 
 .gt-main-content h3 {
 	margin-top: 1.6rem;
+  margin-bottom: 20px;
 }
 
 #gt-page-title h1.js-quickedit-page-title.page-title {
@@ -591,6 +592,22 @@ article.node--type-personnel-profile .field--name-field-email a {
   border: 2px solid #A4925A;
   padding: 20px;
   background: linear-gradient(180deg, rgba(179, 163, 105, 0.50) 0%, rgba(255, 255, 255, 0.00) 51.56%, rgba(179, 163, 105, 0.50) 97.92%), #FFF;
+}
+
+.field--name-field-common-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+.field--name-field-common-links .field__item {
+
+}
+
+.field--name-field-common-links .field__item a {
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 3px solid #EEB211;
 }
 
 /* EOF to help git */
