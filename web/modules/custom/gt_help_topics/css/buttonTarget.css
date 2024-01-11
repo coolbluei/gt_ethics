@@ -21,6 +21,21 @@
   overflow-y: scroll;
   border: 1px solid #e0e0e0;
 }
+
+#help-topic-select .form-item {
+  flex: 1;
+}
+#help-topic-select .form-item select {
+  width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+#help-topic-select .form-item select > option {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
 .help-option {
   display: flex;
   flex-direction: row;
@@ -46,4 +61,6 @@ ul#help-topic-options {
 #help-topic-options li:hover {
   background: #eee;
 }
+
+/** EOF to help git. **/
 
