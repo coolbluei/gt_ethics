@@ -70,10 +70,13 @@ class UnitHelpTopicBlock extends BlockBase {
     $build['#content']['intro'] = $this->configuration['intro'];
     $build['#content']['unit_select'] = $this->getUnitName($this->configuration['unit_select']);
     list($selectOptions, $targets) = $this->getRenderArrayForUnitTopics($this->configuration['unit_select']);
-    $build['#content']['unit_topics'] = [
-      '#type' => 'select',
-      '#options' => $selectOptions,
-    ];
+//    $build['#content']['unit_topics'] = [
+//      '#type' => 'radios',
+//      '#title' => t('I want'),
+//      '#default' => 0,
+//      '#options' => $selectOptions,
+//    ];
+    $build['#content']['raw_options'] = $selectOptions;
     // Add library and settings.
     $build['#attached']['library'][] = 'gt_help_topics/gthelptopics';
     $build['#attached']['drupalSettings']['helpTopicsButtonTargets'] = $targets;
@@ -108,10 +111,14 @@ class UnitHelpTopicBlock extends BlockBase {
       ];
     }
     // build select list???
-    $select_options = [0 => 'Select a Topic'];
+    $select_options = [];
     $targets = [ 0 => ''];
     foreach ($options as $option) {
-      $select_options[$option->id()] = SafeFieldGetter::firstSimple($option, 'field_question_topic');
+      //$select_options[$option->id()] = SafeFieldGetter::firstSimple($option, 'field_question_topic');
+      $select_options[] = [
+        'id' => $option->id(),
+        'label' => SafeFieldGetter::firstSimple($option, 'field_question_topic'),
+      ];
       $linkField = SafeFieldGetter::firstComplex($option, 'field_destination');
       $targets[$option->id()] = \Drupal\Core\Url::fromUri($linkField['uri'],['absolute' => TRUE])->toString();
     }

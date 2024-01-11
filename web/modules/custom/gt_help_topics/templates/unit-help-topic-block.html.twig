@@ -15,7 +15,11 @@
   <p>{{ content.intro }}</p>
   <h2>I want:</h2>
   <div id="help-topic-select" class="control-wrapper">
-    {{ content.unit_topics }}
+    <ul id="help-topic-options">
+    {% for item in content.raw_options %}
+      <li data-id="{{ item.id }}" class="option">{{ item.label }}</li>
+    {% endfor %}
+    </ul>
     <div id="topic-go-button" class="button">GO</div>
   </div>
 </div>

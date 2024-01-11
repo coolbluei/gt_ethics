@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  gap: 30px;
 }
 
 #topic-go-button {
@@ -14,3 +15,35 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
+#help-topic-select fieldset {
+  max-height: 200px;
+  overflow-y: scroll;
+  border: 1px solid #e0e0e0;
+}
+.help-option {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.3em;
+  border-bottom: 1px solid #e0e0e0;
+}
+.help-option input {
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+}
+ul#help-topic-options {
+  overflow-y: scroll;
+  height: 180px;
+  border: 1px solid #eee;
+  padding-left: 8px;
+}
+#help-topic-options li {
+  cursor: pointer;
+  list-style: none;
+  margin-left: 0;
+}
+#help-topic-options li:hover {
+  background: #eee;
+}
+
