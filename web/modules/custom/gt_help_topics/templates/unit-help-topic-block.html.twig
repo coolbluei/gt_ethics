@@ -15,11 +15,7 @@
   <p>{{ content.intro }}</p>
   <h2>Choose from the options below:</h2>
   <div id="help-topic-select" class="control-wrapper">
-    <ul id="help-topic-options">
-    {% for item in content.raw_options %}
-      <li data-id="{{ item.id }}" class="option">{{ item.label }}</li>
-    {% endfor %}
-    </ul>
+    {{ content.unit_topics }}
     <div id="topic-go-button" class="button">GO</div>
   </div>
 </div>
