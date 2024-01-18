@@ -7,11 +7,8 @@ dependencies:
     - field.storage.node.field_personnel_unit
     - node.type.personnel_profile
     - taxonomy.vocabulary.units
-  content:
-    - 'taxonomy_term:units:fe4d9d09-3a77-473a-a6a9-002ef7b146cb'
   module:
     - node
-    - taxonomy
     - user
 id: staff_directory
 label: 'Staff Directory'
@@ -244,13 +241,9 @@ display:
       style:
         type: grid_responsive
         options:
-          grouping:
-            -
-              field: field_personnel_unit
-              rendered: true
-              rendered_strip: false
+          grouping: {  }
           uses_fields: true
-          columns: 4
+          columns: 3
           cell_min_width: 200
           grid_gutter: 40
           alignment: horizontal
@@ -285,6 +278,22 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      style:
+        type: grid_responsive
+        options:
+          grouping: {  }
+          uses_fields: true
+          columns: 4
+          cell_min_width: 200
+          grid_gutter: 40
+          alignment: horizontal
+      row:
+        type: 'entity:node'
+        options:
+          view_mode: teaser
+      defaults:
+        style: false
+        row: false
       display_extenders: {  }
       block_description: 'Staff Directory'
     cache_metadata:
@@ -296,13 +305,13 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_personnel_unit'
-  block_2:
-    id: block_2
-    display_title: 'Ethics Staff Block'
+  block_6:
+    id: block_6
+    display_title: 'Unit Filtered Staff Block'
     display_plugin: block
     position: 1
     display_options:
-      title: 'Ethics and Compliance'
+      title: 'Our Staff'
       sorts:
         field_last_name_value:
           id: field_last_name_value
@@ -330,6 +339,47 @@ display:
             label: ''
             field_identifier: ''
           exposed: false
+      arguments:
+        field_personnel_unit_target_id:
+          id: field_personnel_unit_target_id
+          table: node__field_personnel_unit
+          field: field_personnel_unit_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: numeric
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: taxonomy_tid
+          default_argument_options:
+            term_page: '1'
+            node: true
+            limit: true
+            vids:
+              units: units
+            anyall: +
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: false
       filters:
         status:
           id: status
@@ -351,52 +401,6 @@ display:
           plugin_id: bundle
           value:
             personnel_profile: personnel_profile
-        field_personnel_unit_target_id:
-          id: field_personnel_unit_target_id
-          table: node__field_personnel_unit
-          field: field_personnel_unit_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            50: 50
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: units
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
       filter_groups:
         operator: AND
         groups:
@@ -404,17 +408,18 @@ display:
       defaults:
         title: false
         sorts: false
+        arguments: false
         filters: false
         filter_groups: false
       display_description: ''
       display_extenders: {  }
-      block_description: 'Ethics Staff Directory'
+      block_description: 'Unit Filtered Staff Directory'
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
+        - url
         - 'user.node_grants:view'
         - user.permissions
       tags:

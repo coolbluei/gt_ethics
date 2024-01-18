@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_personnel_unit
     - field.field.node.page.field_subject_mater
     - field.field.node.page.field_unit
     - field.field.node.page.layout_builder__layout
@@ -43,6 +44,22 @@ third_party_settings:
                     class: ''
             weight: 1
             additional: {  }
+          ead8d772-76b5-4049-aa1c-86ddc3ddfc4c:
+            uuid: ead8d772-76b5-4049-aa1c-86ddc3ddfc4c
+            region: content
+            configuration:
+              id: 'field_block:node:page:field_personnel_unit'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
         third_party_settings: {  }
   layout_builder_restrictions:
     entity_view_mode_restriction:
@@ -69,6 +86,14 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  field_personnel_unit:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
   field_subject_mater:
     type: entity_reference_label
     label: above

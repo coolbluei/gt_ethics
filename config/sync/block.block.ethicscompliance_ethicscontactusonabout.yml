@@ -1,0 +1,30 @@
+uuid: 745a93df-46e6-4f78-a769-d700f7884b02
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e9316c8d-86f9-4401-8b85-0b064e11a50b'
+  module:
+    - block_content
+    - system
+  theme:
+    - ethicscompliance
+id: ethicscompliance_ethicscontactusonabout
+theme: ethicscompliance
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:e9316c8d-86f9-4401-8b85-0b064e11a50b'
+settings:
+  id: 'block_content:e9316c8d-86f9-4401-8b85-0b064e11a50b'
+  label: 'Ethics Contact Us on About'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /ethics-and-compliance/about
