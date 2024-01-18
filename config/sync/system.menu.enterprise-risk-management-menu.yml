@@ -1,0 +1,8 @@
+uuid: 9b2b851c-0199-4f98-8788-f47591add03c
+langcode: en
+status: true
+dependencies: {  }
+id: enterprise-risk-management-menu
+label: 'Enterprise Risk Management Menu'
+description: ''
+locked: false

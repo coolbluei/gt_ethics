@@ -6,11 +6,13 @@ dependencies:
     - field.field.node.personnel_profile.body
     - field.field.node.personnel_profile.field_email
     - field.field.node.personnel_profile.field_first_name
+    - field.field.node.personnel_profile.field_forced_sort_order
     - field.field.node.personnel_profile.field_image
     - field.field.node.personnel_profile.field_job_title
     - field.field.node.personnel_profile.field_last_name
     - field.field.node.personnel_profile.field_personnel_unit
     - field.field.node.personnel_profile.field_subject_mater
+    - field.field.node.personnel_profile.field_team
     - image.style.thumbnail
     - node.type.personnel_profile
   module:
@@ -43,6 +45,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_forced_sort_order:
+    type: number
+    weight: 16
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
   field_image:
     type: image_image
     weight: 3
@@ -70,6 +79,26 @@ content:
   field_personnel_unit:
     type: entity_reference_autocomplete_tags
     weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_subject_mater:
+    type: entity_reference_autocomplete
+    weight: 14
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_team:
+    type: entity_reference_autocomplete
+    weight: 15
     region: content
     settings:
       match_operator: CONTAINS
@@ -129,4 +158,3 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
-  field_subject_mater: true

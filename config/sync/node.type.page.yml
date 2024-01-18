@@ -8,6 +8,7 @@ third_party_settings:
   menu_ui:
     available_menus:
       - affiliated-unit
+      - enterprise-risk-management-menu
       - ethics-navigation
       - legal-affairs
       - main

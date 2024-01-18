@@ -658,7 +658,20 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: '<p>No results were found for this option.  Please change filters and try again.</p>'
+          tokenize: false
       defaults:
+        empty: false
         fields: false
       display_extenders: {  }
       path: all-faq

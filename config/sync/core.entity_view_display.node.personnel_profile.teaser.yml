@@ -7,11 +7,13 @@ dependencies:
     - field.field.node.personnel_profile.body
     - field.field.node.personnel_profile.field_email
     - field.field.node.personnel_profile.field_first_name
+    - field.field.node.personnel_profile.field_forced_sort_order
     - field.field.node.personnel_profile.field_image
     - field.field.node.personnel_profile.field_job_title
     - field.field.node.personnel_profile.field_last_name
     - field.field.node.personnel_profile.field_personnel_unit
     - field.field.node.personnel_profile.field_subject_mater
+    - field.field.node.personnel_profile.field_team
     - node.type.personnel_profile
   module:
     - field_formatter_class
@@ -48,11 +50,22 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 2
+    region: content
+  field_team:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 1
     region: content
 hidden:
   body: true
   field_first_name: true
+  field_forced_sort_order: true
   field_last_name: true
   field_personnel_unit: true
   field_subject_mater: true

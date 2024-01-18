@@ -6,11 +6,13 @@ dependencies:
     - field.field.node.personnel_profile.body
     - field.field.node.personnel_profile.field_email
     - field.field.node.personnel_profile.field_first_name
+    - field.field.node.personnel_profile.field_forced_sort_order
     - field.field.node.personnel_profile.field_image
     - field.field.node.personnel_profile.field_job_title
     - field.field.node.personnel_profile.field_last_name
     - field.field.node.personnel_profile.field_personnel_unit
     - field.field.node.personnel_profile.field_subject_mater
+    - field.field.node.personnel_profile.field_team
     - image.style.large
     - node.type.personnel_profile
   module:
@@ -50,7 +52,9 @@ content:
 hidden:
   body: true
   field_first_name: true
+  field_forced_sort_order: true
   field_last_name: true
   field_personnel_unit: true
   field_subject_mater: true
+  field_team: true
   links: true

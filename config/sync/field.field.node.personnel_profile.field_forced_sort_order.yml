@@ -1,0 +1,23 @@
+uuid: 03457ff1-d61b-43d6-a0a6-8b82a45f2d43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forced_sort_order
+    - node.type.personnel_profile
+id: node.personnel_profile.field_forced_sort_order
+field_name: field_forced_sort_order
+entity_type: node
+bundle: personnel_profile
+label: 'Forced Sort Order'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

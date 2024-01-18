@@ -1,0 +1,29 @@
+uuid: be0e605f-5a12-4c3e-a44d-5e048e60ffec
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.enterprise-risk-management-menu
+  module:
+    - system
+  theme:
+    - ethicscompliance
+id: ethicscompliance_enterpriseriskmanagementmenu
+theme: ethicscompliance
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:enterprise-risk-management-menu'
+settings:
+  id: 'system_menu_block:enterprise-risk-management-menu'
+  label: 'Enterprise Risk Management Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/enterprise-risk-management\r\n/enterprise-risk-management/*"

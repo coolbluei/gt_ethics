@@ -1,16 +1,16 @@
-uuid: ff926956-f66f-40d1-9dd7-94bb2c320cc0
+uuid: 2d41e567-8a93-4213-a9de-ac079f39cd58
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_personnel_unit
-    - node.type.page
-    - taxonomy.vocabulary.units
-id: node.page.field_personnel_unit
-field_name: field_personnel_unit
+    - field.storage.node.field_team
+    - node.type.personnel_profile
+    - taxonomy.vocabulary.team
+id: node.personnel_profile.field_team
+field_name: field_team
 entity_type: node
-bundle: page
-label: Unit
+bundle: personnel_profile
+label: Team
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      units: units
+      team: team
     sort:
       field: name
       direction: asc
