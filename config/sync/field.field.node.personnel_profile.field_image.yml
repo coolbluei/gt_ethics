@@ -31,8 +31,8 @@ settings:
   title_field_required: false
   default_image:
     uuid: 4f945d5a-f744-43c2-8c4d-3670aaa562c6
-    alt: 'no headshot available'
-    title: unavailable
+    alt: ''
+    title: ''
     width: 640
     height: 960
 field_type: image

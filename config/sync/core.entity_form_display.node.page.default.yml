@@ -35,7 +35,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_subject_mater:
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     weight: 122
     region: content
     settings:

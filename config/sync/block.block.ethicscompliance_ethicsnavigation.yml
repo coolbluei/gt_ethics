@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/ethics/*\r\n/ethics-and-compliance/*"
+    pages: "/ethics/*\r\n/ethics-and-compliance/*\r\n/ethics-and-compliance"
