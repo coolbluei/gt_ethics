@@ -26,7 +26,6 @@ module:
   datetime_range: 0
   dblog: 0
   devel: 0
-  draggableviews: 0
   dynamic_page_cache: 0
   editor: 0
   editor_advanced_link: 0
@@ -51,7 +50,9 @@ module:
   inline_entity_form: 0
   jquery_ui: 0
   jquery_ui_accordion: 0
+  jquery_ui_autocomplete: 0
   jquery_ui_datepicker: 0
+  jquery_ui_menu: 0
   jquery_ui_slider: 0
   jquery_ui_touch_punch: 0
   layout_builder: 0

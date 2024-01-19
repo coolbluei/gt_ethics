@@ -57,7 +57,6 @@
     "drupal/core-recommended": "^10.0",
     "drupal/custom_add_another": "^2.0@beta",
     "drupal/devel": "^5.0",
-    "drupal/draggableviews": "^2.1",
     "drupal/editor_advanced_link": "^2.2",
     "drupal/editor_file": "^1.6",
     "drupal/entity_reference_revisions": "^1.9",
