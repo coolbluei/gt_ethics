@@ -615,6 +615,7 @@ article.node--type-personnel-profile .field--name-field-email a {
   flex-direction: row;
   align-items: end;
   gap: 20px;
+  margin-bottom: 40px;
 }
 
 .view-id-staff_directory form.views-exposed-form .form-item {
