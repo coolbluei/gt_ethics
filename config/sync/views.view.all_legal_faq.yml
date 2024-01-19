@@ -29,7 +29,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'All FAQ Entities'
+      title: 'All FAQs'
       fields:
         name:
           id: name
@@ -677,9 +677,10 @@ display:
       path: all-faq
       menu:
         type: normal
-        title: 'All FAQ Entities'
+        title: 'All FAQs'
         description: ''
         weight: -45
+        enabled: true
         expanded: false
         menu_name: main
         parent: ''
