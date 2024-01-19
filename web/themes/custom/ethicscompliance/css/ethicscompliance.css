@@ -610,4 +610,35 @@ article.node--type-personnel-profile .field--name-field-email a {
   border-bottom: 3px solid #EEB211;
 }
 
+.view-id-staff_directory form.views-exposed-form {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 20px;
+}
+
+.view-id-staff_directory form.views-exposed-form .form-item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+
+.view-id-staff_directory form.views-exposed-form .form-item label {
+  margin-bottom: 7px;
+}
+
+.view-id-staff_directory form.views-exposed-form .form-actions input {
+  background-color: var(--gt-gold);
+  padding: 16px 25px;
+  border: none;
+  line-height: 1;
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .view-id-staff_directory form.views-exposed-form {
+    flex-direction: column;
+    align-items: start;
+  }
+}
 /* EOF to help git */
