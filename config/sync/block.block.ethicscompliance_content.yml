@@ -11,7 +11,7 @@ _core:
 id: ethicscompliance_content
 theme: ethicscompliance
 region: content
-weight: -18
+weight: -19
 provider: null
 plugin: system_main_block
 settings:
