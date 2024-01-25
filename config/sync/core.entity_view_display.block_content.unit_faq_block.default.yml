@@ -1,0 +1,40 @@
+uuid: d7f676fb-7282-441f-8ced-9c60193a7483
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.unit_faq_block
+    - field.field.block_content.unit_faq_block.body
+    - field.field.block_content.unit_faq_block.field_subject_matter
+    - field.field.block_content.unit_faq_block.field_unit
+  module:
+    - text
+id: block_content.unit_faq_block.default
+targetEntityType: block_content
+bundle: unit_faq_block
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_subject_matter:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_unit:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

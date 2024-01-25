@@ -1,0 +1,8 @@
+uuid: e3c5ed6f-9135-47a9-afa4-520a9218a60c
+langcode: en
+status: true
+dependencies: {  }
+id: unit_faq_block
+label: 'Unit Faq Block'
+revision: 0
+description: ''

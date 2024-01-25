@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_include_faq_block
     - field.field.node.page.field_personnel_unit
     - field.field.node.page.field_subject_mater
     - field.field.node.page.field_team
@@ -71,6 +72,16 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  field_include_faq_block:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
   field_personnel_unit:
     type: entity_reference_label
     label: above

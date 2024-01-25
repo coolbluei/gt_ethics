@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_include_faq_block
     - field.field.node.page.field_personnel_unit
     - field.field.node.page.field_subject_mater
     - field.field.node.page.field_team
@@ -23,7 +24,7 @@ third_party_settings:
       label: 'Personnel Filtering Options'
       region: content
       parent_name: ''
-      weight: 11
+      weight: 12
       format_type: fieldset
       format_settings:
         classes: ''
@@ -53,6 +54,13 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_include_faq_block:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_personnel_unit:
     type: entity_reference_autocomplete_tags
@@ -105,7 +113,7 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 10
+    weight: 11
     region: content
     settings:
       display_label: true

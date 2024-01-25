@@ -1,0 +1,29 @@
+uuid: 4466cd22-c996-4e10-8bbe-2a09b06095cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.unit_faq_block
+    - field.storage.block_content.field_unit
+    - taxonomy.vocabulary.units
+id: block_content.unit_faq_block.field_unit
+field_name: field_unit
+entity_type: block_content
+bundle: unit_faq_block
+label: Unit
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      units: units
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

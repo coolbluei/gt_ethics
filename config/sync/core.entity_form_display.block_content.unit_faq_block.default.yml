@@ -1,0 +1,55 @@
+uuid: 351d0e96-a255-4112-ac57-cab89f849a60
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.unit_faq_block
+    - field.field.block_content.unit_faq_block.body
+    - field.field.block_content.unit_faq_block.field_subject_matter
+    - field.field.block_content.unit_faq_block.field_unit
+  module:
+    - text
+id: block_content.unit_faq_block.default
+targetEntityType: block_content
+bundle: unit_faq_block
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_subject_matter:
+    type: entity_reference_autocomplete
+    weight: 28
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_unit:
+    type: entity_reference_autocomplete
+    weight: 27
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

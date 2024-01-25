@@ -1,0 +1,21 @@
+uuid: 952cbb72-7485-4052-aa73-b2947f4c0fce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_include_faq_block
+    - node.type.page
+id: node.page.field_include_faq_block
+field_name: field_include_faq_block
+entity_type: node
+bundle: page
+label: 'Include FAQ Block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
