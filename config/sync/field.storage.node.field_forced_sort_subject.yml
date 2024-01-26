@@ -1,0 +1,20 @@
+uuid: 61901f74-e578-4b5d-8f4b-913eb2850077
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_forced_sort_subject
+field_name: field_forced_sort_subject
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

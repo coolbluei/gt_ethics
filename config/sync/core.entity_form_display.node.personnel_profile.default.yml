@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.personnel_profile.field_email
     - field.field.node.personnel_profile.field_first_name
     - field.field.node.personnel_profile.field_forced_sort_order
+    - field.field.node.personnel_profile.field_forced_sort_subject
     - field.field.node.personnel_profile.field_image
     - field.field.node.personnel_profile.field_job_title
     - field.field.node.personnel_profile.field_last_name
@@ -16,8 +17,26 @@ dependencies:
     - image.style.thumbnail
     - node.type.personnel_profile
   module:
+    - field_group
     - image
     - path
+third_party_settings:
+  field_group:
+    group_sort_order_controls:
+      children:
+        - field_forced_sort_order
+        - field_forced_sort_subject
+      label: 'Sort Order Controls'
+      region: content
+      parent_name: ''
+      weight: 16
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+        required_fields: true
 id: node.personnel_profile.default
 targetEntityType: node
 bundle: personnel_profile
@@ -47,7 +66,14 @@ content:
     third_party_settings: {  }
   field_forced_sort_order:
     type: number
-    weight: 16
+    weight: 17
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_forced_sort_subject:
+    type: number
+    weight: 18
     region: content
     settings:
       placeholder: ''

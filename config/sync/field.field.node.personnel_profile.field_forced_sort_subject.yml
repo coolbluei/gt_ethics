@@ -1,15 +1,15 @@
-uuid: 03457ff1-d61b-43d6-a0a6-8b82a45f2d43
+uuid: 0e1180bf-3e1e-4954-87fe-139112449c21
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_forced_sort_order
+    - field.storage.node.field_forced_sort_subject
     - node.type.personnel_profile
-id: node.personnel_profile.field_forced_sort_order
-field_name: field_forced_sort_order
+id: node.personnel_profile.field_forced_sort_subject
+field_name: field_forced_sort_subject
 entity_type: node
 bundle: personnel_profile
-label: 'Forced Sort Unit'
+label: 'Forced Sort Subject'
 description: ''
 required: false
 translatable: false
