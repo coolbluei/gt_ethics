@@ -1,0 +1,21 @@
+uuid: 32b11560-a8e6-4f6d-8392-be026b6ced59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_leadership
+    - node.type.personnel_profile
+id: node.personnel_profile.field_leadership
+field_name: field_leadership
+entity_type: node
+bundle: personnel_profile
+label: Leadership
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

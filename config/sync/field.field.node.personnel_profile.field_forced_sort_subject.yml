@@ -9,7 +9,7 @@ id: node.personnel_profile.field_forced_sort_subject
 field_name: field_forced_sort_subject
 entity_type: node
 bundle: personnel_profile
-label: 'Forced Sort Subject'
+label: 'Forced Team Sort'
 description: ''
 required: false
 translatable: false

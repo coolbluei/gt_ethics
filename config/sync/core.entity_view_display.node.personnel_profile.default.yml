@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.personnel_profile.field_image
     - field.field.node.personnel_profile.field_job_title
     - field.field.node.personnel_profile.field_last_name
+    - field.field.node.personnel_profile.field_leadership
     - field.field.node.personnel_profile.field_personnel_unit
     - field.field.node.personnel_profile.field_subject_mater
     - field.field.node.personnel_profile.field_team
@@ -49,6 +50,16 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_leadership:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
     region: content
 hidden:
   body: true

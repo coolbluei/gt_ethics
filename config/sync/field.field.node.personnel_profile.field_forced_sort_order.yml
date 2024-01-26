@@ -9,7 +9,7 @@ id: node.personnel_profile.field_forced_sort_order
 field_name: field_forced_sort_order
 entity_type: node
 bundle: personnel_profile
-label: 'Forced Sort Unit'
+label: 'Forced Unit Sort'
 description: ''
 required: false
 translatable: false

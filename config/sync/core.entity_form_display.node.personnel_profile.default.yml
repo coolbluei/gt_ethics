@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.personnel_profile.field_image
     - field.field.node.personnel_profile.field_job_title
     - field.field.node.personnel_profile.field_last_name
+    - field.field.node.personnel_profile.field_leadership
     - field.field.node.personnel_profile.field_personnel_unit
     - field.field.node.personnel_profile.field_subject_mater
     - field.field.node.personnel_profile.field_team
@@ -35,7 +36,7 @@ third_party_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        description: ''
+        description: "Use 0 (zero) to set the personnel to alphabetic sorting.\r\nUse negative number to \"float\" personnel to the top of the list.\r\nUse positive number to \"push\" personnel to the end of the list."
         required_fields: true
 id: node.personnel_profile.default
 targetEntityType: node
@@ -101,6 +102,13 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_leadership:
+    type: boolean_checkbox
+    weight: 26
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_personnel_unit:
     type: entity_reference_autocomplete_tags

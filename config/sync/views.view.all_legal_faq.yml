@@ -10,6 +10,7 @@ dependencies:
     - taxonomy.vocabulary.units
   content:
     - 'taxonomy_term:units:e6cd8f01-95d6-4e91-837d-b39393dc30b7'
+    - 'taxonomy_term:units:fe4d9d09-3a77-473a-a6a9-002ef7b146cb'
   module:
     - gt_legal_faq
     - taxonomy
@@ -969,7 +970,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            49: 49
+            50: 50
           group: 1
           exposed: false
           expose:

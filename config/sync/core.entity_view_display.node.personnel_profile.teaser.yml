@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.personnel_profile.field_image
     - field.field.node.personnel_profile.field_job_title
     - field.field.node.personnel_profile.field_last_name
+    - field.field.node.personnel_profile.field_leadership
     - field.field.node.personnel_profile.field_personnel_unit
     - field.field.node.personnel_profile.field_subject_mater
     - field.field.node.personnel_profile.field_team
@@ -69,6 +70,7 @@ hidden:
   field_forced_sort_order: true
   field_forced_sort_subject: true
   field_last_name: true
+  field_leadership: true
   field_personnel_unit: true
   field_subject_mater: true
   links: true
