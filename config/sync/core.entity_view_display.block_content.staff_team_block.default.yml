@@ -1,0 +1,35 @@
+uuid: 6c3f0014-46f0-4bf0-aa70-be2e359a4646
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.staff_team_block
+    - field.field.block_content.staff_team_block.body
+    - field.field.block_content.staff_team_block.field_personnel
+  module:
+    - field_formatter_class
+    - text
+id: block_content.staff_team_block.default
+targetEntityType: block_content
+bundle: staff_team_block
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_personnel:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,35 @@
+uuid: 57a7ef20-59f3-4294-ba69-79e8ddb45acd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.staff_team_block
+    - field.storage.block_content.field_personnel
+    - node.type.personnel_profile
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: 'Add Profile'
+    custom_remove: 'Remove Profile'
+id: block_content.staff_team_block.field_personnel
+field_name: field_personnel
+entity_type: block_content
+bundle: staff_team_block
+label: Personnel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      personnel_profile: personnel_profile
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

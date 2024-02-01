@@ -1,0 +1,8 @@
+uuid: 66a773e8-4b33-4033-aac0-f750362a41f8
+langcode: en
+status: true
+dependencies: {  }
+id: staff_team_block
+label: 'Staff Team Block'
+revision: 0
+description: 'A collection of Personnel Profiles to display on a specific page.'
