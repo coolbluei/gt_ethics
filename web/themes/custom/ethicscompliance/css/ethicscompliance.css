@@ -546,7 +546,7 @@ body h6 {
   min-width: 320px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .headshot-message-block-wrapper {
     flex-direction: column;
   }
