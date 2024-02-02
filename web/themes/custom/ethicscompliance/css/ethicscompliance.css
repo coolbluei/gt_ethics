@@ -546,6 +546,12 @@ body h6 {
   min-width: 320px;
 }
 
+@media (min-width: 576px) {
+  .headshot-message-block-wrapper {
+    flex-direction: column;
+  }
+}
+
 .view-staff-directory .views-view-responsive-grid--horizontal {
   align-items: stretch;
 }
