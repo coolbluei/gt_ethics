@@ -1,27 +1,21 @@
-uuid: d3bf3265-da5d-4659-9de4-35f8053ee4f4
+uuid: 1d9e62c2-47fa-469b-bd4b-45112b175366
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_forced_sort_order
-    - field.storage.node.field_image
-    - field.storage.node.field_job_title
-    - field.storage.node.field_personnel_unit
-    - image.style.thumbnail
-    - node.type.personnel_profile
+    - field.storage.gt_help_topic_entity.field_unit
     - taxonomy.vocabulary.units
   module:
-    - image
-    - node
+    - gt_help_topics
     - taxonomy
     - user
-id: dashboard_staff_review
-label: 'Dashboard Staff Review'
+id: help_topic_dashboard
+label: 'Help Topic Dashboard'
 module: views
 description: ''
 tag: ''
-base_table: node_field_data
-base_field: nid
+base_table: gt_help_topic_entity_field_data
+base_field: id
 display:
   default:
     id: default
@@ -29,212 +23,19 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Dashboard Staff Review'
+      title: 'Help Topic Dashboard'
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        name:
+          id: name
+          table: gt_help_topic_entity_field_data
+          field: name
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: title
+          entity_type: null
+          entity_field: name
           plugin_id: field
-          label: Title
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: false
-            ellipsis: false
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_forced_sort_order:
-          id: field_forced_sort_order
-          table: node__field_forced_sort_order
-          field: field_forced_sort_order
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: 'Forced Sort Unit'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: number_integer
-          settings:
-            thousand_separator: ''
-            prefix_suffix: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_image:
-          id: field_image
-          table: node__field_image
-          field: field_image
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: Headshot
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
-          settings:
-            image_link: ''
-            image_style: thumbnail
-            image_loading:
-              attribute: lazy
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_job_title:
-          id: field_job_title
-          table: node__field_job_title
-          field: field_job_title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: 'Job Title'
+          label: 'Admin Name'
           exclude: false
           alter:
             alter_text: false
@@ -277,8 +78,7 @@ display:
           hide_alter_empty: true
           click_sort_column: value
           type: string
-          settings:
-            link_to_entity: false
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -289,10 +89,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_personnel_unit:
-          id: field_personnel_unit
-          table: node__field_personnel_unit
-          field: field_personnel_unit
+        field_unit:
+          id: field_unit
+          table: gt_help_topic_entity__field_unit
+          field: field_unit
           relationship: none
           group_type: group
           admin_label: ''
@@ -334,7 +134,7 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: 'No Unit'
+          empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -352,16 +152,160 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        edit_node:
-          id: edit_node
-          table: node
-          field: edit_node
+        created:
+          id: created
+          table: gt_help_topic_entity_field_data
+          field: created
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
+          entity_type: gt_help_topic_entity
+          entity_field: created
+          plugin_id: field
+          label: Created
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: timestamp
+          settings:
+            date_format: short
+            custom_date_format: ''
+            timezone: ''
+            tooltip:
+              date_format: long
+              custom_date_format: ''
+            time_diff:
+              enabled: false
+              future_format: '@interval hence'
+              past_format: '@interval ago'
+              granularity: 2
+              refresh: 60
+              description: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        status:
+          id: status
+          table: gt_help_topic_entity_field_data
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: gt_help_topic_entity
+          entity_field: status
+          plugin_id: field
+          label: Published
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: boolean
+          settings:
+            format: true-false
+            format_custom_false: ''
+            format_custom_true: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        edit_gt_help_topic_entity:
+          id: edit_gt_help_topic_entity
+          table: gt_help_topic_entity
+          field: edit_gt_help_topic_entity
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: gt_help_topic_entity
           plugin_id: entity_link_edit
-          label: 'Link to edit Content'
+          label: 'Link to edit GT Help Topic'
           exclude: false
           alter:
             alter_text: false
@@ -406,14 +350,31 @@ display:
           output_url_as_text: false
           absolute: false
       pager:
-        type: none
+        type: full
         options:
           offset: 0
+          items_per_page: 50
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
           submit_button: Apply
-          reset_button: true
+          reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
@@ -422,101 +383,91 @@ display:
       access:
         type: perm
         options:
-          perm: 'create personnel_profile content'
+          perm: 'add gt help topic entities'
       cache:
         type: tag
         options: {  }
-      empty:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text_custom
-          empty: true
-          content: '<p>No results.  Please adjust filters.</p>'
-          tokenize: false
+      empty: {  }
       sorts:
-        field_personnel_unit_target_id:
-          id: field_personnel_unit_target_id
-          table: node__field_personnel_unit
-          field: field_personnel_unit_target_id
+        created:
+          id: created
+          table: gt_help_topic_entity_field_data
+          field: created
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: standard
+          entity_type: gt_help_topic_entity
+          entity_field: created
+          plugin_id: date
           order: ASC
           expose:
             label: ''
             field_identifier: ''
           exposed: false
-        field_forced_sort_order_value:
-          id: field_forced_sort_order_value
-          table: node__field_forced_sort_order
-          field: field_forced_sort_order_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: standard
-          order: ASC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-        field_last_name_value:
-          id: field_last_name_value
-          table: node__field_last_name
-          field: field_last_name_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: standard
-          order: ASC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-        field_first_name_value:
-          id: field_first_name_value
-          table: node__field_first_name
-          field: field_first_name_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: standard
-          order: ASC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
+          granularity: second
       arguments: {  }
       filters:
         status:
           id: status
-          table: node_field_data
+          table: gt_help_topic_entity_field_data
           field: status
-          entity_type: node
+          entity_type: gt_help_topic_entity
           entity_field: status
           plugin_id: boolean
           value: '1'
           group: 1
           expose:
             operator: ''
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          value:
-            personnel_profile: personnel_profile
-        field_personnel_unit_target_id:
-          id: field_personnel_unit_target_id
-          table: node__field_personnel_unit
-          field: field_personnel_unit_target_id
+        name:
+          id: name
+          table: gt_help_topic_entity_field_data
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: gt_help_topic_entity
+          entity_field: name
+          plugin_id: string
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: name_op
+            label: Name
+            description: ''
+            use_operator: false
+            operator: name_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: name
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              reader: '0'
+              contributor: '0'
+              editor: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        field_unit_target_id:
+          id: field_unit_target_id
+          table: gt_help_topic_entity__field_unit
+          field: field_unit_target_id
           relationship: none
           group_type: group
           admin_label: ''
@@ -526,14 +477,14 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: field_personnel_unit_target_id_op
-            label: 'Unit (field_personnel_unit)'
+            operator_id: field_unit_target_id_op
+            label: Unit
             description: ''
             use_operator: false
-            operator: field_personnel_unit_target_id_op
+            operator: field_unit_target_id_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: field_personnel_unit_target_id
+            identifier: field_unit_target_id
             required: false
             remember: false
             multiple: false
@@ -566,64 +517,38 @@ display:
       style:
         type: table
         options:
-          grouping:
-            -
-              field: field_personnel_unit
-              rendered: false
-              rendered_strip: true
+          grouping: {  }
           row_class: ''
           default_row_class: true
           columns:
-            title: title
-            field_image: field_image
-            field_job_title: field_job_title
-            field_personnel_unit: field_personnel_unit
-            field_forced_sort_order: field_forced_sort_order
-            field_forced_sort_subject: field_forced_sort_subject
-            edit_node: edit_node
-          default: '-1'
+            name: name
+            created: created
+            edit_gt_help_topic_entity: edit_gt_help_topic_entity
+            field_unit: field_unit
+          default: created
           info:
-            title:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_image:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_job_title:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_personnel_unit:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_forced_sort_order:
+            name:
               sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            field_forced_sort_subject:
+            created:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            edit_gt_help_topic_entity:
               sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            edit_node:
+            field_unit:
               sortable: false
               default_sort_order: asc
               align: ''
@@ -647,28 +572,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text_custom
-          empty: true
-          content: '<p><a href="/node/add/personnel_profile?destination=/dashboard-staff-review">Create New Personnel Profile</a></p>'
-          tokenize: false
-        result:
-          id: result
-          table: views
-          field: result
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: result
-          empty: true
-          content: 'Displaying @start - @end of @total'
+      header: {  }
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -679,13 +583,9 @@ display:
         - url
         - url.query_args
         - user
-        - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_forced_sort_order'
-        - 'config:field.storage.node.field_image'
-        - 'config:field.storage.node.field_job_title'
-        - 'config:field.storage.node.field_personnel_unit'
+        - 'config:field.storage.gt_help_topic_entity.field_unit'
   page_1:
     id: page_1
     display_title: Page
@@ -693,7 +593,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: admin/dashboard/personnel-profile
+      path: admin/dashboard/help-topic
     cache_metadata:
       max-age: -1
       contexts:
@@ -702,10 +602,6 @@ display:
         - url
         - url.query_args
         - user
-        - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_forced_sort_order'
-        - 'config:field.storage.node.field_image'
-        - 'config:field.storage.node.field_job_title'
-        - 'config:field.storage.node.field_personnel_unit'
+        - 'config:field.storage.gt_help_topic_entity.field_unit'

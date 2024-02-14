@@ -1,0 +1,8 @@
+uuid: def0c266-d600-4848-8246-11336fe7c4b2
+langcode: en
+status: true
+dependencies: {  }
+id: dashboard-links
+label: 'Dashboard Links'
+description: ''
+locked: false
